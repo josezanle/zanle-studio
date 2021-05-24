@@ -4,7 +4,12 @@ const Banner = () => {
   return (
     <header className="banner">
       <Navbar />
-      <video src="/video/baner.mp4" autoPlay muted loop />
+      <video
+        src="https://firebasestorage.googleapis.com/v0/b/zanle-group.appspot.com/o/Video%20De%20La%20Animacion%20De%20La%20Tierra%20En%203D-Sin%20Copyright-%5BVisual%20Freedom%5D(1080P_HD).mp4?alt=media&token=1e71e3fa-c2e0-4f3d-aa2b-bc03b6bc2337"
+        autoPlay
+        muted
+        loop
+      />
       <section className="overlay" />
       <section className="text">
         <h2 className="animate__animated animate__fadeInUp animate__delay-.5s">
