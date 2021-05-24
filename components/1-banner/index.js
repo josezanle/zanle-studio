@@ -1,4 +1,3 @@
-import Footer from "../footer";
 import Navbar from "../navbar";
 
 const Banner = () => {
@@ -22,7 +21,6 @@ const Banner = () => {
         </h3>
       </section>
 
-      <Footer />
       <style jsx>
         {`
           .banner {

@@ -31,14 +31,10 @@ const Navbar = () => {
           width: 100vw;
           position: fixed;
           top: 0;
-          padding: 1em 2em;
+          padding: 0 2em;
           display: flex;
           justify-content: space-between;
-          background-image: linear-gradient(
-            to bottom,
-            hsla(0, 0%, 11%, 0.6),
-            transparent
-          );
+          background: hsla(0, 0%, 11%, 0.6);
           z-index: 1000;
         }
       `}</style>

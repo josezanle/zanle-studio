@@ -83,7 +83,7 @@ const MenuBurger = ({ links }) => {
             margin: 0.5em 0;
             font-size: 2em;
             transition: 0.2s ease-in;
-            color: grey;
+            color: #bfc2ca;
             text-align: center;
             z-index: 1000;
           }
@@ -91,7 +91,7 @@ const MenuBurger = ({ links }) => {
             color: white;
           }
           .spread {
-            transform: translateX(-10px);
+            transform: translateX(0px);
             opacity: 1;
             background: hsla(0, 0%, 11%, 0.6);
             backdrop-filter: blur(0.5em);

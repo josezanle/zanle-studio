@@ -2,6 +2,7 @@ import React from "react";
 import Banner from "../components/1-banner";
 import About from "../components/2-about";
 import Slider from "../components/3-slider";
+import Footer from "../components/footer";
 
 const index = () => {
   return (
@@ -9,6 +10,7 @@ const index = () => {
       <Banner />;
       <About />
       <Slider />
+      <Footer />
     </>
   );
 };
