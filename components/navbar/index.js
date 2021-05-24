@@ -34,8 +34,12 @@ const Navbar = () => {
           padding: 1em 2em;
           display: flex;
           justify-content: space-between;
-          background-image: linear-gradient(to bottom, #1c1c1c, transparent);
-          z-index: 100;
+          background-image: linear-gradient(
+            to bottom,
+            hsla(0, 0%, 11%, 0.6),
+            transparent
+          );
+          z-index: 1000;
         }
       `}</style>
     </div>

@@ -50,7 +50,7 @@ const MenuBurger = ({ links }) => {
           }
           .top-icons i {
             font-size: 2em;
-            z-index: 110;
+            z-index: 1000;
           }
           // ==========================================================================
           .burger {
@@ -61,13 +61,14 @@ const MenuBurger = ({ links }) => {
             width: 40px;
             height: 40px;
             cursor: pointer;
+            z-index: 1100;
           }
           /* NAV */
           .nav {
             position: absolute;
             top: 0;
             right: 0;
-            width: 400px;
+            width: 100vw;
             height: 100vh;
             display: flex;
             justify-content: center;
@@ -81,10 +82,10 @@ const MenuBurger = ({ links }) => {
           a {
             margin: 0.5em 0;
             font-size: 2em;
-            transition: 0.3s ease-in;
+            transition: 0.2s ease-in;
             color: grey;
-            width: 100%;
-            padding-left: 1em;
+            text-align: center;
+            z-index: 1000;
           }
           a:hover {
             color: white;
@@ -92,9 +93,9 @@ const MenuBurger = ({ links }) => {
           .spread {
             transform: translateX(-10px);
             opacity: 1;
-            background: hsla(0, 0%, 11%, 0.5);
+            background: hsla(0, 0%, 11%, 0.6);
             backdrop-filter: blur(0.5em);
-            z-index: 110;
+            z-index: 1000;
           }
         `}
       </style>

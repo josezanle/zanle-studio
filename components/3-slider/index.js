@@ -52,13 +52,6 @@ const Slider = () => {
               transform: translateX(-100%);
             }
           }
-          // ============================================
-          @media (max-width: 615px) {
-            .box {
-              width: 150px;
-              min-height: 50px;
-            }
-          }
         `}
       </style>
     </section>
