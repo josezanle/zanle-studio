@@ -1,17 +1,20 @@
 import Text from "./left";
-import Right from "./right";
+// import Right from "./right";
 
 const About = () => {
   return (
-    <section className="about" id="about">
+    <section className="about">
+      <div id="about">
+        <h4>Bienvenido/a</h4>
+      </div>
       <Text />
-      <Right />
+      {/* <Right /> */}
       <style jsx>{`
         .about {
           width: 100vw;
           height: 100vh;
           display: flex;
-          justify-content: space-evenly;
+          justify-content: center;
           align-items: center;
           flex-wrap: wrap;
           color: #bfc2ca;
@@ -23,13 +26,14 @@ const About = () => {
             url(/images/mountain.jpg);
           background-size: cover;
           background-repeat: no-repeat;
-          position: relative;
+          padding: 2em 0;
         }
-        .about:before {
-          position: absolute;
-          top: 6em;
-          left: 2em;
-          content: "Nosotros";
+        #about {
+          width: 100vw;
+          padding-left: 2em;
+        }
+        h4 {
+          display: inline;
           border: 2px solid #bfc2ca;
           color: #bfc2ca;
           padding: 0.5em 1em;

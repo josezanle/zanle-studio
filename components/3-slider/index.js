@@ -27,21 +27,20 @@ const Slider = () => {
           }
           .content {
             display: flex;
-            flex-wrap: nowrap;
-            animation: move 40s infinite linear alternate;
+            animation: move 40s infinite linear;
             width: 100%;
           }
           .box {
             flex: 0 0 auto;
-            width: 100%;
+            width: 500px;
             display: flex;
             justify-content: center;
             align-items: center;
           }
           .image {
-            width: 100%;
+            width: 500px;
             height: 500px;
-            margin: 0 1em;
+            margin: 0 2em;
           }
 
           @keyframes move {

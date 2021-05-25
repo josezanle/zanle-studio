@@ -5,10 +5,11 @@ const Faqs = () => {
   const faqs = Preguntas;
 
   return (
-    <div className="faqs" id="faqs">
-      {faqs?.map(({ text }, i) => (
-        <h4 key={i}>{text}</h4>
-      ))}
+    <div className="faqs">
+      <div id="faqs">
+        <h2>Faqs</h2>
+      </div>
+
       <style jsx>
         {`
           .faqs {
@@ -19,17 +20,18 @@ const Faqs = () => {
             align-items: center;
             flex-flow: column;
             color: white;
-            position: relative;
           }
-          .faqs:before {
-            position: absolute;
-            top: 6em;
-            left: 2em;
-            content: "Faqs";
+          #faqs {
+            width: 100vw;
+            padding-left: 2em;
+          }
+          h2 {
+            display: inline;
             border: 2px solid #bfc2ca;
             color: #bfc2ca;
             padding: 0.5em 1em;
           }
+
           h4 {
             font-size: 2em;
             margin: 1em 0;
