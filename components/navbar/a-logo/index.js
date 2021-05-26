@@ -3,13 +3,14 @@ import Link from "next/link";
 const Logo = () => (
   <>
     <Link href="/">
-      <a>WBW</a>
+      <a rel="noopener">
+        <h1>WBW</h1>
+      </a>
     </Link>
     <style jsx>{`
       a {
-        width: 400px;
+        width: 200px;
         color: white;
-        font-size: 2em;
         margin: auto 0;
       }
     `}</style>

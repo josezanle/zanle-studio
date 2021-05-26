@@ -1,10 +1,7 @@
-import Image from "next/image";
-
 const Text = () => {
   return (
-    <div className="text">
-      <Image width={100} height={100} src="/icons/logo.png" alt="logo" />
-      <h2>Securely start your crypto journey.</h2>
+    <section className="text">
+      <h5>Securely start your crypto journey.</h5>
       <br />
       <p>
         Be the only one in charge of your crypto assets. Secure, Buy, Sell,
@@ -20,13 +17,13 @@ const Text = () => {
             align-items: center;
             flex-flow: column;
           }
-          h2,
+          h5,
           p {
-            width: 200px;
+            width: 300px;
           }
         `}
       </style>
-    </div>
+    </section>
   );
 };
 

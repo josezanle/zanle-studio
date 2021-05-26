@@ -26,7 +26,9 @@ const MenuBurger = ({ links }) => {
       <nav className={`nav${spread ? " spread" : ""}`}>
         {links.map((link, i) => (
           <Link key={i} href={link.href}>
-            <a onClick={handleToggle}>{link.name}</a>
+            <a rel="noreferrer noopener" onClick={handleToggle}>
+              {link.name}
+            </a>
           </Link>
         ))}
       </nav>

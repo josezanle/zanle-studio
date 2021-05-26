@@ -1,5 +1,4 @@
 import Text from "./left";
-// import Right from "./right";
 
 const About = () => {
   return (
@@ -8,7 +7,6 @@ const About = () => {
         <h4>Bienvenido/a</h4>
       </div>
       <Text />
-      {/* <Right /> */}
       <style jsx>{`
         .about {
           width: 100vw;

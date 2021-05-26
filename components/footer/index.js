@@ -17,33 +17,48 @@ const Footer = () => {
         </div>
         <div className="box__footer">
           <h2>Soluciones</h2>
-          <a href="https://www.google.com">App Desarrollo</a>
-          <a href="#">ecommerce</a>
-          <a href="#">Desarrollo Web</a>
-          <a href="#">Desarrollo Android</a>
+          <a rel="noreferrer noopener" href="https://www.google.com">
+            App Desarrollo
+          </a>
+          <a rel="noreferrer noopener" href="#">
+            ecommerce
+          </a>
+          <a rel="noreferrer noopener" href="#">
+            Desarrollo Web
+          </a>
+          <a rel="noreferrer noopener" href="#">
+            Desarrollo Android
+          </a>
         </div>
 
         <div className="box__footer">
           <h2>Informacion</h2>
-          <a href="#">Acerca de</a>
-          <a href="#">Trabajos</a>
-          <a href="#">Procesos</a>
-          <a href="#">Servicios</a>
+          <a rel="noreferrer noopener" href="#">
+            Acerca de
+          </a>
+          <a rel="noreferrer noopener" href="#">
+            Trabajos
+          </a>
+          <a rel="noreferrer noopener" href="#">
+            Procesos
+          </a>
+          <a rel="noreferrer noopener" href="#">
+            Servicios
+          </a>
         </div>
 
         <div className="box__footer">
           <h2>Redes Sociales</h2>
-          <a href="#">
-            {" "}
+          <a rel="noreferrer noopener" href="#">
             <i className="fab fa-facebook-square"></i> Facebook
           </a>
-          <a href="#">
+          <a rel="noreferrer noopener" href="#">
             <i className="fab fa-twitter-square"></i> Twitter
           </a>
-          <a href="#">
+          <a rel="noreferrer noopener" href="#">
             <i className="fab fa-linkedin"></i> Linkedin
           </a>
-          <a href="#">
+          <a rel="noreferrer noopener" href="#">
             <i className="fab fa-instagram-square"></i> Instagram
           </a>
         </div>
@@ -59,14 +74,6 @@ const Footer = () => {
         footer {
           width: 100%;
           padding: 50px 0px;
-          background-image: url(../Images/background-footer.svg);
-          background-size: cover;
-
-          /*background-color: #d0f0f8;
-        -webkit-mask-image: url("../Images/background-footer.svg");
-        mask-image: url("../Images/background-footer.svg");
-        -webkit-mask-size: cover;
-        mask-size: cover;*/
         }
 
         .container__footer {
