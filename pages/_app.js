@@ -21,7 +21,7 @@ function MyApp({ Component, pageProps }) {
         <meta property="og:type" content="blog" />
         <meta property="og:image" content="/images/banner.jpg" />
         <meta property="og:url" content="https://wbw-redesign.vercel.app/" />
-        <meta property="og:site_name" content="AddThis Blog" />
+        <meta property="og:site_name" content="WeBuildWebz" />
       </Head>
     </>
   );

@@ -1,8 +1,8 @@
 const Faqs = () => {
   return (
-    <div className="faqs">
+    <section className="faqs">
       <div id="faqs">
-        <h2>Faqs</h2>
+        <h4>Faqs</h4>
       </div>
 
       <style jsx>
@@ -20,19 +20,14 @@ const Faqs = () => {
             width: 100vw;
             padding-left: 2em;
           }
-          h2 {
+          h4 {
             display: inline;
             border: 2px solid #bfc2ca;
             padding: 0.5em 1em;
           }
-
-          h4 {
-            font-size: 2em;
-            margin: 1em 0;
-          }
         `}
       </style>
-    </div>
+    </section>
   );
 };
 

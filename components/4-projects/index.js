@@ -2,7 +2,7 @@ const Projects = () => {
   return (
     <div className="projects">
       <div id="projects">
-        <h2>Galeria</h2>
+        <h4>Galeria</h4>
       </div>
       <style jsx>
         {`
@@ -15,7 +15,7 @@ const Projects = () => {
             width: 100vw;
             padding-left: 2em;
           }
-          h2 {
+          h4 {
             display: inline;
             border: 2px solid #bfc2ca;
             padding: 0.5em 1em;

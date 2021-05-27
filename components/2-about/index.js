@@ -4,7 +4,7 @@ const About = () => {
   return (
     <section className="about">
       <div id="about">
-        <h4>Bienvenido/a</h4>
+        <h2>Bienvenido/a</h2>
       </div>
       <Text />
       <style jsx>{`
@@ -30,10 +30,9 @@ const About = () => {
           width: 100vw;
           padding-left: 2em;
         }
-        h4 {
+        h2 {
           display: inline;
           border: 2px solid #bfc2ca;
-          color: #bfc2ca;
           padding: 0.5em 1em;
         }
       `}</style>

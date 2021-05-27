@@ -2,7 +2,7 @@ import Navbar from "../navbar";
 
 const Banner = () => {
   return (
-    <header className="banner">
+    <header>
       <Navbar />
       <section className="text">
         <h2>Webs, Apps y Diseños Deluxe</h2>
@@ -14,7 +14,7 @@ const Banner = () => {
 
       <style jsx>
         {`
-          .banner {
+          header {
             width: 100vw;
             min-height: 100vh;
             display: flex;

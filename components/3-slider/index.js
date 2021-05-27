@@ -7,7 +7,7 @@ const Slider = () => {
       <div className="content">
         {sliderImages?.map(({ url }, i) => (
           <div className="box" key={i}>
-            <img alt="alt de las imagenes nene" src={url} />
+            <img alt="alt de las imagenes " src={url} />
           </div>
         ))}
       </div>

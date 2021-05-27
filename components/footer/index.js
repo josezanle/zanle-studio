@@ -19,45 +19,45 @@ const Footer = () => {
           <a rel="noreferrer noopener" href="https://www.google.com">
             App Desarrollo
           </a>
-          <a rel="noreferrer noopener" href="/">
+          <a rel="noreferrer noopener" href="#">
             ecommerce
           </a>
-          <a rel="noreferrer noopener" href="/">
+          <a rel="noreferrer noopener" href="#">
             Desarrollo Web
           </a>
-          <a rel="noreferrer noopener" href="/">
+          <a rel="noreferrer noopener" href="#">
             Desarrollo Android
           </a>
         </div>
 
         <div className="box__footer">
           <h2>Informacion</h2>
-          <a rel="noreferrer noopener" href="/">
+          <a rel="noreferrer noopener" href="#">
             Acerca de
           </a>
-          <a rel="noreferrer noopener" href="/">
+          <a rel="noreferrer noopener" href="#">
             Trabajos
           </a>
-          <a rel="noreferrer noopener" href="/">
+          <a rel="noreferrer noopener" href="#">
             Procesos
           </a>
-          <a rel="noreferrer noopener" href="/">
+          <a rel="noreferrer noopener" href="#">
             Servicios
           </a>
         </div>
 
         <div className="box__footer">
           <h2>Redes Sociales</h2>
-          <a rel="noreferrer noopener" href="/">
+          <a rel="noreferrer noopener" href="#">
             <i className="fab fa-facebook-square"></i> Facebook
           </a>
-          <a rel="noreferrer noopener" href="/">
+          <a rel="noreferrer noopener" href="#">
             <i className="fab fa-twitter-square"></i> Twitter
           </a>
-          <a rel="noreferrer noopener" href="/">
+          <a rel="noreferrer noopener" href="#">
             <i className="fab fa-linkedin"></i> Linkedin
           </a>
-          <a rel="noreferrer noopener" href="/">
+          <a rel="noreferrer noopener" href="#">
             <i className="fab fa-instagram-square"></i> Instagram
           </a>
         </div>

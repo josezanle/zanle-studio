@@ -5,11 +5,12 @@ import Slider from "../components/3-slider";
 import Projects from "../components/4-projects";
 import Faqs from "../components/5-faqs";
 import Footer from "../components/footer";
-import Loading from "../components/loading";
 
 const LoadableComponent = Loadable({
   loader: () => import("../components/1-banner"),
-  loading: Loading,
+  loading() {
+    return <div>Loading...</div>;
+  },
 });
 
 const index = () => {

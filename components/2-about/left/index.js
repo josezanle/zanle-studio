@@ -1,7 +1,7 @@
 const Text = () => {
   return (
     <section className="text">
-      <h2>Securely start your crypto journey.</h2>
+      <h4>Securely start your crypto journey.</h4>
       <br />
       <p>
         Be the only one in charge of your crypto assets. Secure, Buy, Sell,
