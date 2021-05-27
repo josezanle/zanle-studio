@@ -1,44 +1,27 @@
 import "../styles/globals.css";
 import Head from "next/head";
-import { NextSeo } from "next-seo";
 
 function MyApp({ Component, pageProps }) {
   return (
     <>
       <Component {...pageProps} />;
-      <NextSeo
-        title="WeBuilWebz"
-        description="Ayudamos a mujeres emprendedoras que buscan pasar su negocio al mundo DIGITAL."
-        canonical="https://wbw-redesign.vercel.app/"
-        openGraph={{
-          url: "https://wbw-redesign.vercel.app/",
-          title: "WeBuildWebz",
-          description:
-            "Ayudamos a mujeres emprendedoras que buscan pasar su negocio al mundo DIGITAL.",
-          site_name: "WeBuildWebz",
-          images: [
-            {
-              url: "icons/gem.svg",
-              width: 551,
-              height: 344,
-              alt: "Imagen 1",
-            },
-            {
-              url: "icons/gem.svg",
-              width: 96,
-              height: 96,
-              alt: "Imagen 2",
-            },
-          ],
-        }}
-      />
       <Head>
-        <link
-          rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap"
-        />
+        <title>webuildwebz</title>
+        <meta
+          name="description"
+          content="Este es el sitio rediseñado de WeBuildWebz"
+        ></meta>
+        <meta name="robots" content="index, follow" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" href="/icons/gem.svg" />
-        <link rel="Canonical" href="https://www.webuildwebz.com" />
+        <link rel="Canonical" href="https://wbw-redesign.vercel.app/" />
+
+        {/* og */}
+        <meta property="og:title" content="WeBuilDwebz Redesign" />
+        <meta property="og:type" content="blog" />
+        <meta property="og:image" content="/images/banner.jpg" />
+        <meta property="og:url" content="https://wbw-redesign.vercel.app/" />
+        <meta property="og:site_name" content="AddThis Blog" />
       </Head>
     </>
   );

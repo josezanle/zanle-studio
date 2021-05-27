@@ -5,7 +5,7 @@ const Banner = () => {
     <header className="banner">
       <Navbar />
       <section className="text">
-        <h2 className="text-animate">Webs, Apps y Diseños Deluxe</h2>
+        <h2>Webs, Apps y Diseños Deluxe</h2>
         <br />
 
         <p>En WeBuildWebz nos encargamos de darte un servicio perfecto.</p>
@@ -30,11 +30,9 @@ const Banner = () => {
           }
 
           h2 {
-            font-size: 3em;
             font-variant: small-caps;
           }
           p {
-            font-size: 1.5em;
             font-style: italic;
           }
         `}
