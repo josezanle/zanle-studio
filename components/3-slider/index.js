@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Images } from "../../data/images";
 
 const Slider = () => {
@@ -6,17 +5,9 @@ const Slider = () => {
   return (
     <section className="container">
       <div className="content">
-        {sliderImages?.map(({ width, height, url }, i) => (
+        {sliderImages?.map(({ url }, i) => (
           <div className="box" key={i}>
-            <Image
-              width={width}
-              height={height}
-              alt="alt de las imagenes nene"
-              src={url}
-              style={{
-                margin: " 0 2em",
-              }}
-            />
+            <img alt="alt de las imagenes nene" src={url} />
           </div>
         ))}
       </div>
@@ -37,6 +28,11 @@ const Slider = () => {
             display: flex;
             justify-content: center;
             align-items: center;
+          }
+          img {
+            width: 500px;
+            height: 500px;
+            margin: 0 2em;
           }
 
           @keyframes move {
