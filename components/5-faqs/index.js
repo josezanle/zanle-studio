@@ -1,9 +1,4 @@
-import { Preguntas } from "../../data/faqs";
-
 const Faqs = () => {
-  // data que sera mapeada.
-  const faqs = Preguntas;
-
   return (
     <div className="faqs">
       <div id="faqs">
@@ -28,7 +23,6 @@ const Faqs = () => {
           h2 {
             display: inline;
             border: 2px solid #bfc2ca;
-            color: #bfc2ca;
             padding: 0.5em 1em;
           }
 

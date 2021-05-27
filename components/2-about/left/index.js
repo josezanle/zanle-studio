@@ -1,7 +1,7 @@
 const Text = () => {
   return (
     <section className="text">
-      <h5>Securely start your crypto journey.</h5>
+      <h2>Securely start your crypto journey.</h2>
       <br />
       <p>
         Be the only one in charge of your crypto assets. Secure, Buy, Sell,
@@ -17,8 +17,8 @@ const Text = () => {
             align-items: center;
             flex-flow: column;
           }
-          h5,
-          p {
+          h2,
+          p
             width: 300px;
           }
         `}

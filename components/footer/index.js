@@ -10,8 +10,7 @@ const Footer = () => {
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
               impedit cum cumque velit libero officiis quam doloremque
-              reprehenderit quae corporis! Delectus architecto officia
-              praesentium atque laudantium, nam deleniti sapiente deserunt.
+              reprehenderit quae corporis!
             </p>
           </div>
         </div>
@@ -20,45 +19,45 @@ const Footer = () => {
           <a rel="noreferrer noopener" href="https://www.google.com">
             App Desarrollo
           </a>
-          <a rel="noreferrer noopener" href="#">
+          <a rel="noreferrer noopener" href="/">
             ecommerce
           </a>
-          <a rel="noreferrer noopener" href="#">
+          <a rel="noreferrer noopener" href="/">
             Desarrollo Web
           </a>
-          <a rel="noreferrer noopener" href="#">
+          <a rel="noreferrer noopener" href="/">
             Desarrollo Android
           </a>
         </div>
 
         <div className="box__footer">
           <h2>Informacion</h2>
-          <a rel="noreferrer noopener" href="#">
+          <a rel="noreferrer noopener" href="/">
             Acerca de
           </a>
-          <a rel="noreferrer noopener" href="#">
+          <a rel="noreferrer noopener" href="/">
             Trabajos
           </a>
-          <a rel="noreferrer noopener" href="#">
+          <a rel="noreferrer noopener" href="/">
             Procesos
           </a>
-          <a rel="noreferrer noopener" href="#">
+          <a rel="noreferrer noopener" href="/">
             Servicios
           </a>
         </div>
 
         <div className="box__footer">
           <h2>Redes Sociales</h2>
-          <a rel="noreferrer noopener" href="#">
+          <a rel="noreferrer noopener" href="/">
             <i className="fab fa-facebook-square"></i> Facebook
           </a>
-          <a rel="noreferrer noopener" href="#">
+          <a rel="noreferrer noopener" href="/">
             <i className="fab fa-twitter-square"></i> Twitter
           </a>
-          <a rel="noreferrer noopener" href="#">
+          <a rel="noreferrer noopener" href="/">
             <i className="fab fa-linkedin"></i> Linkedin
           </a>
-          <a rel="noreferrer noopener" href="#">
+          <a rel="noreferrer noopener" href="/">
             <i className="fab fa-instagram-square"></i> Instagram
           </a>
         </div>
@@ -99,19 +98,16 @@ const Footer = () => {
           max-width: 350px;
           margin-top: 20px;
           font-weight: 500;
-          color: #7a7a7a;
           font-size: 18px;
         }
 
         .box__footer h2 {
           margin-bottom: 30px;
-          color: #343434;
           font-weight: 700;
         }
 
         .box__footer a {
           margin-top: 10px;
-          color: #7a7a7a;
           font-weight: 600;
         }
 
@@ -132,13 +128,11 @@ const Footer = () => {
 
         .box__copyright p {
           margin-top: 20px;
-          color: #7a7a7a;
         }
 
         .box__copyright hr {
           border: none;
           height: 1px;
-          background-color: #7a7a7a;
         }
       `}</style>
     </footer>

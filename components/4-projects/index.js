@@ -18,7 +18,6 @@ const Projects = () => {
           h2 {
             display: inline;
             border: 2px solid #bfc2ca;
-            color: #bfc2ca;
             padding: 0.5em 1em;
           }
         `}
