@@ -6,13 +6,13 @@ const Slider = () => {
   return (
     <section className="container">
       <div className="content">
-        {sliderImages?.map((image, i) => (
+        {sliderImages?.map(({ width, height, url }, i) => (
           <div className="box" key={i}>
             <Image
-              width={500}
-              height={500}
+              width={width}
+              height={height}
               alt="alt de las imagenes nene"
-              src={image.url}
+              src={url}
               style={{
                 margin: " 0 2em",
               }}
