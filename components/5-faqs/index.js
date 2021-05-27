@@ -1,25 +1,12 @@
 const Faqs = () => {
   return (
-    <section className="faqs">
-      <div id="faqs">
+    <section id="faqs">
+      <div className="row">
         <h4>Faqs</h4>
       </div>
 
       <style jsx>
         {`
-          .faqs {
-            width: 100vw;
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-flow: column;
-            color: white;
-          }
-          #faqs {
-            width: 100vw;
-            padding-left: 2em;
-          }
           h4 {
             display: inline;
             border: 2px solid #bfc2ca;

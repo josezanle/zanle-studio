@@ -95,8 +95,7 @@ const MenuBurger = ({ links }) => {
           .spread {
             transform: translateX(0px);
             opacity: 1;
-            background: hsla(0, 0%, 11%, 0.6);
-            backdrop-filter: blur(0.5em);
+            background: hsla(0, 0%, 11%, 0.93);
             z-index: 1000;
           }
         `}

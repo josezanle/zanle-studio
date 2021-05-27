@@ -1,20 +1,25 @@
+import Image from "next/image";
 import { Images } from "../../data/images";
 
 const Slider = () => {
   const sliderImages = Images;
   return (
-    <section className="container">
+    <section>
       <div className="content">
         {sliderImages?.map(({ url }, i) => (
           <div className="box" key={i}>
-            <img alt="alt de las imagenes " src={url} />
+            <Image
+              width={500}
+              height={500}
+              alt="alt de las imagenes "
+              src={url}
+            />
           </div>
         ))}
       </div>
       <style jsx>
         {`
-          .container {
-            width: 100vw;
+          section {
             overflow-x: hidden;
           }
           .content {
@@ -28,11 +33,6 @@ const Slider = () => {
             display: flex;
             justify-content: center;
             align-items: center;
-          }
-          img {
-            width: 500px;
-            height: 500px;
-            margin: 0 2em;
           }
 
           @keyframes move {

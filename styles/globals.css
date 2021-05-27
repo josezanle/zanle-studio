@@ -34,3 +34,16 @@ p {
   margin: 0;
   line-height: 1em;
 }
+
+.row {
+  width: 100vw;
+}
+
+section {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 2em;
+}

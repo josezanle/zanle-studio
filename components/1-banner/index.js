@@ -4,13 +4,13 @@ const Banner = () => {
   return (
     <header>
       <Navbar />
-      <section className="text">
+      <div className="text">
         <h2>Webs, Apps y Diseños Deluxe</h2>
         <br />
 
         <p>En WeBuildWebz nos encargamos de darte un servicio perfecto.</p>
         <br />
-      </section>
+      </div>
 
       <style jsx>
         {`
