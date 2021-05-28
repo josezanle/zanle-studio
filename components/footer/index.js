@@ -49,16 +49,32 @@ const Footer = () => {
         <div className="box__footer">
           <h2>Redes Sociales</h2>
           <a rel="noreferrer noopener" href="#">
-            <i className="fab fa-facebook-square"></i> Facebook
+            <img
+              src="/icons/facebook.svg"
+              alt="facebook icon"
+              className="icon"
+            />
+            Facebook
           </a>
           <a rel="noreferrer noopener" href="#">
-            <i className="fab fa-twitter-square"></i> Twitter
+            <img src="/icons/twitter.svg" alt="twitter icon" className="icon" />{" "}
+            Twitter
           </a>
           <a rel="noreferrer noopener" href="#">
-            <i className="fab fa-linkedin"></i> Linkedin
+            <img
+              src="/icons/linkedin.svg"
+              alt="linkedin icon"
+              className="icon"
+            />{" "}
+            Linkedin
           </a>
           <a rel="noreferrer noopener" href="#">
-            <i className="fab fa-instagram-square"></i> Instagram
+            <img
+              src="/icons/instagram.svg"
+              alt="instagram icon"
+              className="icon"
+            />{" "}
+            Instagram
           </a>
         </div>
       </div>
@@ -90,10 +106,6 @@ const Footer = () => {
           padding: 40px;
         }
 
-        .box__footer .logo img {
-          width: 20px;
-        }
-
         .box__footer .terms {
           max-width: 350px;
           margin-top: 20px;
@@ -115,8 +127,10 @@ const Footer = () => {
           opacity: 0.8;
         }
 
-        .box__footer a .fab {
-          font-size: 20px;
+        .icon {
+          width: 20px;
+          height: 20px;
+          padding: 5px 5px 0 0;
         }
 
         .box__copyright {

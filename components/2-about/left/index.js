@@ -1,30 +1,25 @@
-const Text = () => {
+const Left = () => {
   return (
-    <section className="text">
-      <h4>Securely start your crypto journey.</h4>
-      <br />
-      <p>
-        Be the only one in charge of your crypto assets. Secure, Buy, Sell,
-        Exchange. Anywhere you go.
-      </p>
+    <div className="text">
+      <h4>La libertad de crear la Página Web que quieras</h4>
+
       <style jsx>
         {`
           .text {
             width: 600px;
-            height: 100vh;
+            height: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
-            flex-flow: column;
+            padding-right: 1em;
           }
-          h2,
-          p
-            width: 300px;
+          h4 {
+            font-size: 3em;
           }
         `}
       </style>
-    </section>
+    </div>
   );
 };
 
-export default Text;
+export default Left;

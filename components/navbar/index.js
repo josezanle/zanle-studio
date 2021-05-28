@@ -39,7 +39,7 @@ const Navbar = () => {
           justify-content: space-between;
           background: hsla(0, 0%, 11%, 0.6);
           backdrop-filter: blur(0.3em);
-          z-index: 1000;
+          z-index: 100;
         }
       `}</style>
     </div>

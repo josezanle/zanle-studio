@@ -1,12 +1,11 @@
-import Text from "./left";
+import Left from "./left";
+import Right from "./right";
 
 const About = () => {
   return (
     <section id="about">
-      <div className="row">
-        <h4>Bienvenido/a</h4>
-      </div>
-      <Text />
+      <Left />
+      <Right />
       <style jsx>{`
         section {
           background-image: linear-gradient(
@@ -17,12 +16,7 @@ const About = () => {
             url(/images/mountain.jpg);
           background-size: cover;
           background-repeat: no-repeat;
-        }
-
-        h4 {
-          display: inline;
-          border: 2px solid #bfc2ca;
-          padding: 0.5em 1em;
+          flex-wrap: wrap;
         }
       `}</style>
     </section>

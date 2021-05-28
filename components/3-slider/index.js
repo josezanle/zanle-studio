@@ -4,7 +4,7 @@ import { Images } from "../../data/images";
 const Slider = () => {
   const sliderImages = Images;
   return (
-    <section>
+    <>
       <div className="content">
         {sliderImages?.map(({ url }, i) => (
           <div className="box" key={i}>
@@ -19,13 +19,10 @@ const Slider = () => {
       </div>
       <style jsx>
         {`
-          section {
-            overflow-x: hidden;
-          }
           .content {
             display: flex;
-            animation: move 40s infinite linear;
-            width: 100%;
+            animation: move 22s infinite linear;
+            width: 100vw;
           }
           .box {
             flex: 0 0 auto;
@@ -45,7 +42,7 @@ const Slider = () => {
           }
         `}
       </style>
-    </section>
+    </>
   );
 };
 
