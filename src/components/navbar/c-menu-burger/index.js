@@ -20,12 +20,18 @@ const MenuBurger = ({ links }) => {
           <path d="M4 6H20V8H4zM8 11H20V13H8zM13 16H20V18H13z" />
         </svg>
       </span>
+      {
+        spread && (
 
-      <nav className={`nav${spread ? " spread" : ""}`}>
-        {links.map((link, i) => (
-          <Link key={i} href={link.href} onClick={handleToggle}>{link.name}</Link>
-        ))}
-      </nav>
+          <nav className="nav spread">
+            {links.map((link, i) => (
+              <Link key={i} href={link.href} onClick={handleToggle}>
+                <p className="links">{link.name}</p>
+              </Link>
+            ))}
+          </nav>
+        )
+      }
 
       <style jsx>
         {`
@@ -37,7 +43,7 @@ const MenuBurger = ({ links }) => {
             padding: 0.5em;
             z-index: 200;
           }
-          // ======================================================================
+
           .top-icons {
             display: flex;
             justify-content: flex-end;
@@ -48,7 +54,7 @@ const MenuBurger = ({ links }) => {
             font-size: 2em;
             z-index: 1000;
           }
-          // ==========================================================================
+
           .burger {
             fill: white;
             border-radius: 0.5em;
@@ -60,16 +66,17 @@ const MenuBurger = ({ links }) => {
           /* NAV */
           .nav {
             transition: 0.4s ease;
-            transform: translateX(300px);
+            transform: translateX(50px);
             opacity: 0;
           }
           a {
             margin: 0.5em;
             font-size: 2em;
-            transition: 0.2s ease-in;
+            transition: 0.5s ease-in;
             color: #bfc2ca;
             text-align: center;
             z-index: 100;
+            
           }
           a:hover {
             color: white;
@@ -77,9 +84,8 @@ const MenuBurger = ({ links }) => {
           .spread {
             transform: translateX(0px);
             opacity: 1;
-            background: hsla(0, 0%, 11%, 0.93);
-            z-index: 100;
-            width: 100vw;
+            background: hsla(0, 0%, 11%, 0.9);
+            width: 300px;
             height: 100vh;
             position: absolute;
             top: 0;
@@ -88,6 +94,13 @@ const MenuBurger = ({ links }) => {
             justify-content: center;
             align-items: center;
             flex-flow: column;
+          }
+          .links {
+            font-size: 2em;
+            color: silver;
+          }
+          .links:hover {
+            color: white;
           }
         `}
       </style>

@@ -1,5 +1,5 @@
-const Tag = ({ children }) => (
-  <div className="row">
+const Tag = ({ children , id}) => (
+  <div className="row" id={id}>
     <button>{children}</button>
     <style jsx>
       {`

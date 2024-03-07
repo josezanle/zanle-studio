@@ -3,20 +3,21 @@ import Right from "./right";
 
 const About = () => {
   return (
-    <section id="about">
-      <Left />
-      <Right />
+    <section>
+        <Left />
+        <Right />
       <style jsx>{`
         section {
           background-image: linear-gradient(
               to top,
-              hsla(0, 0%, 11%, 0.8),
-              hsla(0, 0%, 11%, 1)
+              hsla(0, 0%, 11%, 0.7),
+              hsla(0, 0%, 11%, 0.7)
             ),
-            url(/images/mountain.jpg);
+            url("https://images.pexels.com/photos/8332961/pexels-photo-8332961.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
           background-size: cover;
           background-repeat: no-repeat;
           flex-wrap: wrap;
+          background-position: center;
         }
       `}</style>
     </section>

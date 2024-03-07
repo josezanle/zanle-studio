@@ -1,12 +1,7 @@
 const Right = () => {
   return (
     <div className="text">
-      <p>
-        Diseña y crea tu propia página web con calidad profesional. Ya sea que
-        estés promocionando tu negocio, mostrando tu trabajo, abriendo tu tienda
-        online o comenzando un blog, puedes hacerlo todo con el creador de
-        páginas web de Wix.
-      </p>
+      <p>Tenemos la mejor calidad para tu negocio digital.</p>
       <style jsx>
         {`
           .text {
@@ -15,10 +10,25 @@ const Right = () => {
             display: flex;
             justify-content: center;
             align-items: center;
+            color: #f9fafd;
           }
           p {
-            font-size: 1.5em;
-            line-height: 1.5em;
+            font-size: 70px;
+            font-weight: 100;
+          }
+
+          @media (max-width: 1200px) {
+            .text {
+              width: 50%;
+            }
+            .text p {
+              font-size: 50px;
+            }
+          }
+          @media (max-width: 900px) {
+            .text p{
+              font-size: 35px;
+            }
           }
         `}
       </style>

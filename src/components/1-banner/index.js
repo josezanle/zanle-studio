@@ -1,89 +1,87 @@
 "use client";
 
+import { Icon } from "../icons";
+import Logo from "../logo";
 import Navbar from "../navbar";
 
 const Banner = () => {
-  return (
-    <header>
-      <Navbar />
-      <div className="overlay" />
-      <div className="text">
-        <h2>Webs, Apps y Diseños Deluxe</h2>
-        <br />
 
-        <p>En Zanle Group nos encargamos de darte un servicio perfecto.</p>
-        <br />
-      </div>
+  return (
+    <header id="header">
+      <Navbar />
+
+      <h1 className="word">ZANLE</h1>
 
       <style jsx>
         {`
-          header {
-            width: 100vw;
+          #header {
+            max-width: 100vw;
             min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-          }
-          header:before {
-            position: absolute;
-            top: 0;
-            left: 0;
-            content: "";
-            width: 500px;
-            height: 500px;
-            border-radius: 50%;
-            background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
-            animation: rotating 10s ease linear infinite;
-          }
-
-          @keyframes rotating {
-            0% {
-              transform: translateY(200px);
-              background-image: linear-gradient(
-                to top,
-                #ff0844 0%,
-                #ffb199 100%
-              );
-            }
-            100% {
-              transform: translateY(-200px);
-              background-image: linear-gradient(
-                to bottom,
-                #ff0844 0%,
-                #ffb199 100%
-              );
-            }
-          }
-
-          .overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100vw;
-            height: 100vh;
+          
             background-image: linear-gradient(
               to top,
-              hsla(0, 0%, 11%, 0.5),
-              hsla(0, 0%, 11%, 0.5)
-            );
-            backdrop-filter: blur(2em);
-            z-index: 10;
+              hsla(0, 0%, 11%, 0.7),
+              hsla(0, 0%, 11%, 0.7)
+            ),
+            url("https://images.pexels.com/photos/323705/pexels-photo-323705.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+            background-size: cover;
+            background-repeat: no-repeat;
+            flex-wrap: wrap;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-flow: column;
+          }
+          .word{
+            font-size: 350px;
+            color: white;
+            letter-spacing: 150px;
+            position: relative;
+          }
+          
+          .word::before{
+            font-size: 70px;
+            color: white;
+            line-height: 0;
+            position: absolute;
+            top: -20px;
+            right: 0;
+            content: "Group";
+            font-weight: bold;
           }
 
-          .text {
-            width: 400px;
-            margin: 1em;
-            padding: 1em;
-            z-index: 100;
+          @media (max-width: 1850px) {
+            .word{
+              font-size: 150px;
+              letter-spacing: 100px;
+          }
+          
+          .word::before{font-size: 50px}
           }
 
-          h2 {
-            font-variant: small-caps;
+          @media (max-width: 1200px) {
+            .word{
+              font-size: 100px;
+            }
           }
-          p {
-            font-style: italic;
+
+          @media (max-width: 1200px) {
+            .word{
+              font-size: 70px;
+              letter-spacing: 50px;
+            }
+            .word::before{font-size: 30px}
           }
+
+          @media (max-width: 560px) {
+            .word{
+              font-size: 70px;
+              letter-spacing: 10px;
+            }
+            .word::before{font-size: 30px}
+          }
+          
         `}
       </style>
     </header>
