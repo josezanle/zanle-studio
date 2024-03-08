@@ -1,4 +1,4 @@
-[Captura-de-pantalla-2024-03-08-110033.png](https://postimg.cc/v11hKcHG)
+[![Captura-de-pantalla-2024-03-08-110033.png](https://i.postimg.cc/9fbkr76w/Captura-de-pantalla-2024-03-08-110033.png)](https://postimg.cc/v11hKcHG)
 
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
