@@ -1,10 +1,7 @@
-import { Description } from "../../data/features";
-import { Icon } from "../icons";
-import Logo from "../logo";
-import Section from "../section";
+import { Icon } from "@/components/icons";
+import Section from "@/components/section";
 
-
-const Features = () => {
+const Enterprice = () => {
   return (
     <Section>
       <div className="card">
@@ -92,7 +89,7 @@ const Features = () => {
           }
 
           @media (max-width: 1200px) {
-            .card {width: calc(100% - 4em)}
+            .card {width: calc(100% - 4em); margin-top: 2em}
         }
         `}
       </style>
@@ -100,4 +97,4 @@ const Features = () => {
   );
 };
 
-export default Features;
+export default Enterprice;

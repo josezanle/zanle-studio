@@ -1,6 +1,6 @@
 import React from 'react'
-import Section from '../section'
-import { Icon } from '../icons'
+import { Icon } from '@/components/icons'
+import Section from '@/components/section'
 
 const Pricing = () => {
     return (

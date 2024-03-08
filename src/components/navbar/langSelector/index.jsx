@@ -1,5 +1,6 @@
 import React from 'react'
 import { Icon } from '@/components/icons'
+import RotateWorld from '@/components/rotateWorld'
 
 const LangSelect = () => {
     return (
@@ -9,7 +10,7 @@ const LangSelect = () => {
                 <option value="en">EN</option>
             </select>
 
-            <Icon name='world' size={40} />
+            <RotateWorld />
 
             <style jsx>{`
                 .langSelect {
@@ -18,7 +19,6 @@ const LangSelect = () => {
                     background: white;
                     gap: 10px;
                     padding: .5em 1em;
-                    border: 2px solid black;
                     border-radius: 2em;
                 }
             `}</style>

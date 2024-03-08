@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import Logo from "../logo";
 import LangSelect from "./langSelector";
 import Navigation from "./navigation";

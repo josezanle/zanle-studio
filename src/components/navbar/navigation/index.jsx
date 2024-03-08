@@ -30,7 +30,7 @@ const Navigation = ({ paths }) => {
         nav ul li a {
           position: relative;
           font-size: 30px;
-          color: silver;
+          color: white;
           cursor: pointer;
           font-weight: bold;
           text-decoration: none;

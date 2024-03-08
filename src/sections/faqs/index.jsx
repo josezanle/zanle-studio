@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Section from "../section";
+import Section from "@/components/section";
 
 const Faqs = () => {
   const [openSelect, setOpenSelect] = useState(null);
@@ -112,8 +112,6 @@ const Faqs = () => {
           .faqs__content .left__content .faq__title{text-align: center; margin-bottom: 1em}
           
         }
-
-
       `}</style>
       </div>
     </Section>

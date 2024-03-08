@@ -1,5 +1,5 @@
+import Logo from '@/components/logo';
 import React, { useEffect, useState } from 'react';
-import Logo from '../logo';
 
 const Welcome = () => {
   const [windowWidth, setWindowWidth] = useState(typeof window !== 'undefined' ? window.innerWidth : 0);
@@ -7,12 +7,6 @@ const Welcome = () => {
   useEffect(() => {
     const handleResize = () => {
       setWindowWidth(window.innerWidth);
-
-      // Realiza acciones específicas cuando el ancho de la ventana es inferior a 1200px
-      if (window.innerWidth < 1200) {
-        // Realiza acciones aquí
-        console.log('Ancho de ventana inferior a 1200px');
-      }
     };
 
     // Agrega el evento de cambio de tamaño de la ventana
@@ -20,16 +14,12 @@ const Welcome = () => {
       window.addEventListener('resize', handleResize);
     }
 
-    // Limpieza al desmontar el componente
     return () => {
-      // Verifica nuevamente si estamos en el entorno del cliente antes de quitar el evento
       if (typeof window !== 'undefined') {
         window.removeEventListener('resize', handleResize);
       }
     };
   }, []);
-
-  console.log("windowWidth", windowWidth);
 
   return (
     <div className='welcome__container'>

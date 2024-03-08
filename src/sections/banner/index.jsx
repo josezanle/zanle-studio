@@ -1,8 +1,6 @@
 "use client";
 
-import { Icon } from "../icons";
-import Logo from "../logo";
-import Navbar from "../navbar";
+import Navbar from "@/components/navbar";
 
 const Banner = () => {
 
@@ -20,8 +18,8 @@ const Banner = () => {
           
             background-image: linear-gradient(
               to top,
-              hsla(0, 0%, 11%, 0.7),
-              hsla(0, 0%, 11%, 0.7)
+              hsla(0, 0%, 11%, 0.4),
+              hsla(0, 0%, 11%, 0.9)
             ),
             url("https://images.pexels.com/photos/323705/pexels-photo-323705.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
             background-size: cover;
