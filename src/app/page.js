@@ -9,25 +9,26 @@ import Enterprice from "@/sections/enterprice";
 import Faqs from "@/sections/faqs";
 import Footer from "@/sections/footer";
 import ScrollToTop from "@/components/scrollToTop";
+import Copyrights from "@/sections/copyrights";
 
 
 export default function Home() {
   return (
     <>
       <Banner id="top"/>
-      <Tag>Bienvenido</Tag>
+      <Tag borderColor="#34dd9a" fontColor="#34dd9a">Bienvenido</Tag>
       <Welcome />
-      <Tag id="about">Acerca</Tag>
+      <Tag id="about" borderColor="#2cb3ff" fontColor="#2cb3ff">Acerca</Tag>
       <About />
-      <Tag id="price">Precios</Tag>
+      <Tag id="price" borderColor="#ff445a" fontColor="#ff445a">Precios</Tag>
       <Pricing />
       <Enterprice />
-      <Tag id="faqs">Faqs</Tag>
+      <Tag id="faqs" borderColor="#005de9" fontColor="#005de9">Faqs</Tag>
       <Faqs />
-      <Tag id="footer">Contacto</Tag>
+      <Tag id="footer" borderColor="#ffcd1d" fontColor="#ffcd1d">Contacto</Tag>
       <Footer />
-      {/* <Copyrights /> */}
       <ScrollToTop />
+      <Copyrights />
     </>
 
   );

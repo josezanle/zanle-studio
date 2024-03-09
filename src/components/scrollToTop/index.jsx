@@ -51,11 +51,11 @@ const ScrollToTop = () => {
       <style jsx>{`
         .scroll-to-top-button {
           position: fixed;
-          bottom: 20px;
-          right: 20px;
+          bottom: 2em;
+          right: 2em;
           width: 50px;
           height: 50px;
-          background-color: #0070f3;
+          background-color: #005de9;
           color: #ffffff;
           border-radius: 50%;
           display: flex;

@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Section = ({children}) => {
+const Section = ({ children, background = "white" }) => {
     return (
         <div className="section">{children}
 
@@ -10,6 +10,7 @@ const Section = ({children}) => {
                         width: 100vw;
                         display: flex;
                         justify-content: center;
+                        background: ${background}
                     }
                 `}
             </style>

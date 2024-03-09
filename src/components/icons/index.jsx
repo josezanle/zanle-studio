@@ -6,6 +6,8 @@ import { ArrowLong } from './arrowLong'
 import { World } from './world'
 import { Check } from './check'
 import { Sms } from './sms'
+import { ArrowShortDown } from './arrowShortDown'
+import { ArrowShortUp } from './arrowShortUp'
 
 export const Icon = ({ name = "applause", size = 20, fill = "silver", onClick = () => { } }) => {
     switch (name) {
@@ -14,6 +16,12 @@ export const Icon = ({ name = "applause", size = 20, fill = "silver", onClick = 
 
         case "applause":
             return <Applause size={size} fill={fill} onClick={onClick} />
+
+        case "arrow-short-down":
+            return <ArrowShortDown size={size} fill={fill} onClick={onClick} />
+
+        case "arrow-short-up":
+            return <ArrowShortUp size={size} fill={fill} onClick={onClick} />
 
         case "arrow-large":
             return <ArrowLong size={size} fill={fill} onClick={onClick} />

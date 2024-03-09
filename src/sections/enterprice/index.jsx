@@ -4,7 +4,9 @@ import Section from "@/components/section";
 const Enterprice = () => {
   return (
     <Section>
-      <div className="card">
+      <div className="content">
+
+        <div className="card">
           <h2 className="title">Enterprice</h2>
 
           <hr />
@@ -18,21 +20,26 @@ const Enterprice = () => {
           <p className="bottom__text">+</p>
 
           <p className="bottom__text">HOSTING +</p>
-          <p className="bottom__text">CERTIFICADO SSL  <b style={{ color: "#f4c534" }}>GRATIS</b> +</p>
+          <p className="bottom__text">CERTIFICADO SSL  <b style={{ color: "#ffcd1d" }}>GRATIS</b> +</p>
           <p className="bottom__text">DOMINIO INCLUIDO</p>
 
           <button className='button__start__chat'>Empezar!</button>
         </div>
 
+      </div>
+
       <style jsx>
         {`
-          .card {
+          .content {
             width: 1200px;
+          }
+          .card {
+            width: 100%;
             display: flex;
             justify-content: center;
             flex-flow: column;
             color: white;
-            background: #2251a0;
+            background: #005de9;
             padding: 2.5em;
             border-radius: 2em;
           }
@@ -86,10 +93,13 @@ const Enterprice = () => {
             margin-top: 2.5em;
             cursor: pointer;
             font-weight: 600;
+            background: white;
+            color: #005de9;
           }
 
           @media (max-width: 1200px) {
-            .card {width: calc(100% - 4em); margin-top: 2em}
+            .content {padding: 2em 1em 2em 2em}
+            .card {width: 100%}
         }
         `}
       </style>

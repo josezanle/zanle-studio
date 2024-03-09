@@ -27,7 +27,10 @@ const Welcome = () => {
         windowWidth < 1200 && windowWidth > 800 ? "200px" :
           windowWidth < 800 ? "150px"
             : "400px"
-      } />
+      } 
+      strokeOne='#34dd9a'
+      strokeTwo='#34dd9a'
+      />
       <h1>Bienvenido/a</h1>
 
       <style jsx>
@@ -39,7 +42,7 @@ const Welcome = () => {
               align-items: center;
               display: flex;
               flex-flow: column;
-              background: #f9fafd;
+              background: white;
             }
           `}
       </style>

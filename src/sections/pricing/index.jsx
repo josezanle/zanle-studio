@@ -7,7 +7,7 @@ const Pricing = () => {
         <Section>
             <div className='pricing__container'>
 
-                <h2 className='title'>Precios, simples <b style={{ color: "#f45434" }}>*</b></h2>
+                <h2 className='title'>Precios, simples <b style={{ color: "#ff445a" }}>*</b></h2>
 
                 <p className='paragraph'>Simplificamos los precios y oportunidades, para que sea mas eficiente, rapido y facil, al momento de tomar una desicion, que te impulse a crecer en tu sitio web</p>
 
@@ -76,7 +76,7 @@ const Pricing = () => {
 
                     .pricing__container .cards__container {
                         display: flex;
-                        gap: 10px;
+                        gap: 1em;
                     }
                     .pricing__container .cards__container .price__simple,
                     .pricing__container .cards__container .price__montly
@@ -89,13 +89,13 @@ const Pricing = () => {
                    
                     .pricing__container .cards__container .price__simple {
                         flex: 1;
-                        background: #f9fafd;
+                        background: #ffcd1d;
                         border: 1px solid #f0f0f0;
                         color: #1c1c1c
                     }
                     .pricing__container .cards__container .price__montly {
                         flex: 2;
-                        background: #f45434;
+                        background: #ff445a;
                         color: #f4f4f4
                     }
 
@@ -169,8 +169,8 @@ const Pricing = () => {
                     }
                     .pricing__container .cards__container .price__simple .button__start__chat
                      {
-                        background: transparent;
-                        border: 1px solid #1c1c1c;
+                        background: white;
+                        color: #ffcd1d;
                     }
                     .pricing__container .cards__container .price__montly .button__start__chat
                      {
@@ -196,7 +196,9 @@ const Pricing = () => {
                     @media (max-width: 980px) {
                         .pricing__container .cards__container {
                             width: 100%;
+                            gap: 2em;
                         }
+                        
                         .pricing__container .cards__container .price__simple {
                             flex: 1;
                         }
