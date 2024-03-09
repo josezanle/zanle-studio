@@ -58,14 +58,14 @@ const Faqs = () => {
         .faqs__content{
           display: flex;
           width: 1200px;
-          min-height: 100%
-          {/* min-height: 100vh; */}
+          min-height: 100vh;
           padding-top: 4em;
         }
 
         .faqs__content .left__content,
         .faqs__content .right__content{
           flex: 1;
+          height: 100%;
         }
 
         .faqs__content .left__content .faq__title{
@@ -149,7 +149,6 @@ const Faqs = () => {
             flex-flow: column;
           }
           .faqs__content .left__content{display: flex; align-items: center;}
-          .faqs__content .right__content{min-height: 100vh}
           .faqs__content .left__content .faq__title{text-align: center; margin-bottom: 1em}
           
         }

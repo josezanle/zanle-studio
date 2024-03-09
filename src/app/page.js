@@ -14,7 +14,7 @@ import Copyrights from "@/sections/copyrights";
 
 export default function Home() {
   return (
-    <>
+    <body>
       <Banner id="top"/>
       <Tag borderColor="#34dd9a" fontColor="#34dd9a">Bienvenido</Tag>
       <Welcome />
@@ -29,7 +29,7 @@ export default function Home() {
       <Footer />
       <ScrollToTop />
       <Copyrights />
-    </>
+    </body>
 
   );
 }

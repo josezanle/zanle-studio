@@ -7,7 +7,7 @@ const Section = ({ children, background = "white" }) => {
             <style jsx>
                 {`
                     .section {
-                        width: 100vw;
+                        width: 100%;
                         display: flex;
                         justify-content: center;
                         background: ${background}

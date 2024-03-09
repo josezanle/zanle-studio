@@ -24,19 +24,15 @@ const paths = [
 const Navbar = () => {
   return (
     <div className="navbar">
-      <span style={{ display: "flex", alignItems: "center", color: "white" }}>
-        <Logo strokeOne="white" strokeTwo="white" size="50px" />
-        <h1>Zanle Group</h1>
-      </span>
-
+      <span className="logo__content"><Logo strokeOne="white" strokeTwo="white" size="50px" />Zanle Group</span>
       <Navigation paths={paths} />
       <LangSelect />
 
       <style jsx>{`
         .navbar {
-          width: 100vw;
+          width: 100%;
           padding: 3em;
-          position:absolute;
+          position: absolute;
           top: 0;
           left: 0;
           display: flex;
@@ -46,6 +42,11 @@ const Navbar = () => {
           background: transparent;
           backdrop-filter: blur(0.3em);
           transition: background-color 0.3s ease-in-out;
+        }
+        .navbar .logo__content{
+          display: flex;
+          align-items: center;
+          color: white; font-size: 22px;
         }
         @media (max-width: 1280px) {
           .navbar{

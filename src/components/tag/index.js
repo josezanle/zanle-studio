@@ -12,6 +12,7 @@ const Tag = ({ children, id, background = "white", borderColor="black", fontColo
           font-size: 2.5em;
           background: ${background};
           border-radius: .5em;
+          margin: 2em .7em;
         }
       `}
     </style>

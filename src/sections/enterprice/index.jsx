@@ -32,7 +32,9 @@ const Enterprice = () => {
         {`
           .content {
             width: 1200px;
-          }
+            padding-bottom: 2em;
+            min-height: 100vh;
+            }
           .card {
             width: 100%;
             display: flex;
@@ -98,8 +100,8 @@ const Enterprice = () => {
           }
 
           @media (max-width: 1200px) {
-            .content {padding: 2em 1em 2em 2em}
-            .card {width: 100%}
+            .content {padding: 0 2em}
+            .card {width: 100%; margin-top: 1em}
         }
         `}
       </style>

@@ -77,6 +77,7 @@ const Pricing = () => {
                     .pricing__container .cards__container {
                         display: flex;
                         gap: 1em;
+                        padding: .5em 0;
                     }
                     .pricing__container .cards__container .price__simple,
                     .pricing__container .cards__container .price__montly
@@ -88,13 +89,13 @@ const Pricing = () => {
                     }
                    
                     .pricing__container .cards__container .price__simple {
-                        flex: 1;
+                        width: 400px;
                         background: #ffcd1d;
                         border: 1px solid #f0f0f0;
                         color: #1c1c1c
                     }
                     .pricing__container .cards__container .price__montly {
-                        flex: 2;
+                        width: 800px;
                         background: #ff445a;
                         color: #f4f4f4
                     }
@@ -143,7 +144,7 @@ const Pricing = () => {
                     .pricing__container .cards__container .price__simple .price .price__mode, 
                     .pricing__container .cards__container .price__montly .price .price__mode 
                     {
-                        font-size: 40px; 
+                        font-size: 30px; 
                     }
 
 
@@ -182,29 +183,20 @@ const Pricing = () => {
                     @media (max-width: 1280px) {
                         .pricing__container {
                             width: 100vw;
-                            padding: 0 2em;
+                            padding-left: 2em;
+                            padding-right: 2em;
                         }
-                        .pricing__container .cards__container {
+                        .pricing__container .cards__container {width: 100%}
+
+                        .pricing__container .cards__container .price__simple,
+                        .pricing__container .cards__container .price__montly{
                             width: 100%;
-                            flex-wrap: wrap;
-                        }
-                        .pricing__container .cards__container .price__simple .price .price__mode {
-                            font-size: 30px; 
                         }
                     }
 
-                    @media (max-width: 980px) {
-                        .pricing__container .cards__container {
-                            width: 100%;
-                            gap: 2em;
-                        }
+                    @media (max-width: 995px) {
+                        .pricing__container .cards__container {flex-flow: column; margin-bottom: 1em}
                         
-                        .pricing__container .cards__container .price__simple {
-                            flex: 1;
-                        }
-                        .pricing__container .cards__container .price__montly {
-                            flex: 1;
-                        }
                     }
 
                     @media (max-width: 590px) {
