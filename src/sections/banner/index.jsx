@@ -186,18 +186,26 @@ const Banner = () => {
                   border: 10px solid #ffcd1d;
             }
             #header .right__content .bottom,  #header .right__content {
-              height: 400px;
+                  height: 400px;
             }
         }
 
         @media (max-width: 500px) {
-            #header .right__content .bottom .name:after,
-            #header .right__content .bottom .name:before
-             {display: none}
-
+            #header .right__content .bottom .name:after {
+                  right: -50px;
+                  top: -70px;
+            }
+            #header .right__content .bottom .name:before {
+                  left: -100px;
+                  bottom: -170px;
+          }
+        }
+        @media (max-width: 410px) {
+            #header .right__content .bottom .name:after {
+                  right: -10px;
+                  top: -70px;
+            }
             
-
-
         }
 
           

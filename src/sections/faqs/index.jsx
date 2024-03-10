@@ -34,16 +34,19 @@ const Faqs = () => {
               <div
                 key={select.id}
                 className={`select-item ${openSelect === select.id ? 'open' : ''}`}
-                style={{ border: `2px solid ${openSelect === select.id ? '#005de9' : 'black'} ` }}
+                style={{ borderBottom: `2px solid ${openSelect === select.id ? '#005de9' : '#f1f1f1'} ` }}
 
               >
                 <div
                   className="select-label"
                   onClick={() => handleToggle(select.id)}
-                  style={{ color: openSelect === select.id ? '#005de9' : 'black' }}
+                  style={{ color: openSelect === select.id ? '#005de9' : 'silver' }}
                 >
                   {select.label}
-                  <Icon name={openSelect === select.id ? "arrow-short-up" : "arrow-short-down"} />
+                  <Icon
+                    name={openSelect === select.id ? "arrow-short-up" : "arrow-short-down"}
+                    fill={openSelect === select.id ? "#005de9" : "#f1f1f1"}
+                  />
                 </div>
 
                 <div className="options-container">
@@ -69,7 +72,7 @@ const Faqs = () => {
         }
 
         .faqs__content .left__content .faq__title{
-          font-size:40px;
+          font-size: 40px;
           font-style: italic;
           color: #005de9
         }
@@ -81,15 +84,14 @@ const Faqs = () => {
 
         .select-item {
           margin-bottom: 20px;
-          border-radius: 10px;
           overflow: hidden;
           transition: box-shadow 0.3s ease-in-out;
         }
 
         .select-label {
-          padding: 1em;
+          padding: 0 10px;
           font-size: 22px;
-          font-weight: bold;
+          font-weight: 300;
           background-color: white;
           cursor: pointer;
           user-select: none;
@@ -103,14 +105,14 @@ const Faqs = () => {
           max-height: 0;
           overflow: hidden;
           transition: max-height 0.3s ease-in-out;
-          padding-left: 1.4em;
-          padding-bottom: 1em;
         }
 
         .option-fade-in {
           opacity: 0;
           animation: fadeIn 0.4s ease-in-out forwards;
           font-size: 18px;
+          padding-left: 10px;
+          color: #1c1c1c;
         }
 
         @keyframes fadeIn {
@@ -129,7 +131,7 @@ const Faqs = () => {
         }
 
         .select-item.open .options-container {
-          max-height: 200px; /* Ajusta según sea necesario */
+          max-height: 100px; 
           transition: max-height 0.3s ease-in-out;
         }
 
@@ -144,14 +146,22 @@ const Faqs = () => {
           .faqs__content{
             width: 100vw;
             min-height: 100vh;
-            padding: 0 2em;
+            padding: 4em 2em;
             display: flex;
             flex-flow: column;
           }
           .faqs__content .left__content{display: flex; align-items: center;}
           .faqs__content .left__content .faq__title{text-align: center; margin-bottom: 1em}
-          
         }
+        @media (max-width: 500px) {
+          .faqs__content .left__content .faq__title{
+            width: 100%;
+            text-align: left;
+            font-size: 30px;
+          }
+        }
+        @media (max-width: 500px) {.faqs__content .left__content .faq__title{font-size: 25px}}
+
       `}</style>
       </div>
     </Section>

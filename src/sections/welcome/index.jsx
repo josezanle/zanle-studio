@@ -9,7 +9,6 @@ const Welcome = () => {
     <div className='welcome__container'>
       <div className="left__content">
         <div className='name_company__content'>
-
           <Icon name="star" size={30} fill='#005de9' />
           <Icon name="star" size={30} fill='#005de9' />
           <Icon name="star" size={30} fill='#005de9' />
@@ -29,6 +28,7 @@ const Welcome = () => {
           alt="pexels-photo-20044367/free-photo-of-manos-telefono-inteligente-ordenador-portatil-trabajando"
           width={500}
           height={500}
+          layout="responsive"
           style={{borderRadius:"2em"}}
         />
       </div>
@@ -113,8 +113,17 @@ const Welcome = () => {
               padding-left: 0;
               margin-top: 2em;
             }
-          
           }
+
+          @media (max-width: 600px) {.welcome__container .left__content p{width: 100%}}
+          @media (max-width: 500px) {
+            .welcome__container .left__content p{width: 100%}
+            .welcome__container .left__content h1{font-size: 60px; width: 100%}
+            .welcome__container .left__content .name_company__content {
+              flex-wrap: wrap;
+            }
+          }
+          
           `}
       </style>
     </div>

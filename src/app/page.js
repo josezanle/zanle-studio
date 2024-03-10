@@ -1,5 +1,4 @@
 'use client';
-import Tag from "@/components/tag";
 
 import Banner from "@/sections/banner";
 import Welcome from "@/sections/welcome";

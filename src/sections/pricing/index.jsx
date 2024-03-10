@@ -8,7 +8,6 @@ const Pricing = () => {
             <div className='pricing__container' id="price">
 
                 <h2 className='title'>Precios, simples <b style={{ color: "#ff445a" }}>*</b></h2>
-
                 <p className='paragraph'>Simplificamos los precios y oportunidades, para que sea mas eficiente, rapido y facil, al momento de tomar una desicion, que te impulse a crecer en tu sitio web</p>
 
                 <div className="cards__container">
@@ -46,20 +45,20 @@ const Pricing = () => {
 
                         <p className='ask'>*QUE CONTIENE ESTE PLAN?</p>
 
-                        <span className='price__item'><Icon name='check' /><p>Sitio auto adminstrable</p></span>
-                        <span className='price__item'><Icon name='check' /><p>Incluye dashboard para edita conteniado</p></span>
-                        <span className='price__item'><Icon name='check' /><p>Responsive Design</p></span>
-                        <span className='price__item'><Icon name='check' /><p>Whatsapp incluido</p></span>
-                        <span className='price__item'><Icon name='check' /><p>Galeria slide customizable</p></span>
-                        <span className='price__item'><Icon name='check' /><p>Hasta 3 paginas</p></span>
+                        <span className='price__item'><Icon name='check' fill='white'/><p>Sitio auto adminstrable</p></span>
+                        <span className='price__item'><Icon name='check' fill='white'/><p>Incluye dashboard para edita conteniado</p></span>
+                        <span className='price__item'><Icon name='check' fill='white'/><p>Responsive Design</p></span>
+                        <span className='price__item'><Icon name='check' fill='white'/><p>Whatsapp incluido</p></span>
+                        <span className='price__item'><Icon name='check' fill='white'/><p>Galeria slide customizable</p></span>
+                        <span className='price__item'><Icon name='check' fill='white'/><p>Hasta 3 paginas</p></span>
 
                         <button className='button__start__chat'>Empezar!</button>
 
                     </div>
                 </div>
 
-                <style jsx>
-                    {`
+<style jsx>
+{`
                     .pricing__container {
                         width: 1200px;
                         min-height: 100vh;
@@ -75,6 +74,7 @@ const Pricing = () => {
                         width: 100%;
                         font-size: 40px;
                         margin-bottom: 100px;
+                        font-weight: 200;
                     }
 
                     .pricing__container .cards__container {
@@ -152,17 +152,17 @@ const Pricing = () => {
 
 
                     .pricing__container .cards__container .price__simple .price__item,
-                    .pricing__container .cards__container .price__montly .price__item
-                     {
+                    .pricing__container .cards__container .price__montly .price__item{
+                        width: 100%;
                         display: flex;
                         gap: 10px;
-                        align-items: flex-end;
+                        align-items: center;
                         font-size: 29px;
                         margin-bottom: 10px;
+                        font-weight: 200;
                     }
                     .pricing__container .cards__container .price__simple .button__start__chat,
-                    .pricing__container .cards__container .price__montly .button__start__chat
-                     {
+                    .pricing__container .cards__container .price__montly .button__start__chat{
                         border-radius: 1em;
                         padding: 1em 0;
                         width: 100%;
@@ -197,21 +197,65 @@ const Pricing = () => {
                         }
                     }
 
-                    @media (max-width: 995px) {
-                        .pricing__container .cards__container {flex-flow: column; margin-bottom: 1em}
-                        
-                    }
-
-                    @media (max-width: 590px) {
+                    @media (max-width: 995px) {.pricing__container .cards__container {flex-flow: column; margin-bottom: 1em}}
+                    @media (max-width: 600px) {
                         .pricing__container .cards__container .price__simple .top__title,
                         .pricing__container .cards__container .price__montly .top__title
                         {
                             font-size: 25px;
                             margin-bottom: 15px;
                         }
+
+                        .pricing__container .title {
+                            text-align: left;
+                            font-size: 40px;
+                            width: 100%;
+                        }
+
+                        .pricing__container .cards__container .price__simple,
+                        .pricing__container .cards__container .price__montly{
+                            border-radius: 1em;
+                        }
                     }
+
+                    @media (max-width: 420px) {
+                        .pricing__container .cards__container .price__simple .top__title,
+                        .pricing__container .cards__container .price__montly .top__title{
+                            font-size: 25px;
+                        }
+
+                        .pricing__container .cards__container .price__simple .price .price__value, 
+                        .pricing__container .cards__container .price__montly .price .price__value {
+                            font-size: 50px; 
+                        }
+                        .pricing__container .cards__container .price__simple .price .price__mode, 
+                        .pricing__container .cards__container .price__montly .price .price__mode,
+                        .pricing__container .cards__container .price__simple .ask,
+                        .pricing__container .cards__container .price__montly .ask,
+                        .pricing__container .cards__container .price__simple .price__item,
+                        .pricing__container .cards__container .price__montly .price__item{
+                            font-size: 20px;
+                        }
+                        .pricing__container .cards__container .price__simple .button__start__chat,
+                        .pricing__container .cards__container .price__montly .button__start__chat{
+                            border-radius: .5em;
+                            padding: .3em 0;
+                            width: 100%;
+                            font-size: 20px;
+                            margin-top: .5em;
+                        }
+
+                        .pricing__container .cards__container .price__simple .top__title,
+                        .pricing__container .cards__container .price__montly .top__title{
+                            font-size: 30px;
+                            gap: 0;
+                            flex-flow: column;
+                        }
+
+                    }
+            }
                     
-                `}
+`}
                 </style>
             </div>
         </Section>

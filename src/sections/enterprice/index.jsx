@@ -26,15 +26,14 @@ const Enterprice = () => {
           <button className='button__start__chat'>Empezar!</button>
         </div>
 
-      </div>
-
-      <style jsx>
-        {`
+        <style jsx>
+          {`
           .content {
             width: 1200px;
             padding-bottom: 2em;
             min-height: 100vh;
-            }
+            background: white
+          }
           .card {
             width: 100%;
             display: flex;
@@ -42,7 +41,7 @@ const Enterprice = () => {
             flex-flow: column;
             color: white;
             background: #005de9;
-            padding: 2.5em;
+            padding: 2em;
             border-radius: 2em;
           }
 
@@ -68,14 +67,15 @@ const Enterprice = () => {
           {
             display: flex;
             gap: 10px;
-            align-items: flex-end;
+            align-items: center;
             font-size: 29px;
             margin-bottom: 10px;
+            font-weight: 200;
+            width: 100%
           }
 
           .card .paragraph {
             width: 100%;
-            font-size: 40px;
             margin-bottom: 100px;
           }
 
@@ -86,8 +86,7 @@ const Enterprice = () => {
             line-height: 35px;
           }
 
-          .card .button__start__chat
-          {
+          .card .button__start__chat{
             border-radius: 1em;
             padding: 1em 0;
             width: 100%;
@@ -102,9 +101,38 @@ const Enterprice = () => {
           @media (max-width: 1200px) {
             .content {padding: 0 2em}
             .card {width: 100%; margin-top: 1em}
-        }
-        `}
-      </style>
+          }
+
+          @media (max-width: 600px) {
+            .content .card {border-radius: 1em}
+            .content .card .title{font-size: 30px}
+            .card .ask{
+              width: 100%;
+              font-size: 26px;
+            }
+            .card .bottom__text {
+              font-size: 30px;
+              margin-top: 20px;
+              line-height: 35px;
+            }
+          }
+
+          @media (max-width: 420px) {
+            .content .card .button__start__chat{
+              border-radius: .5em;
+              padding: .3em 0;
+              width: 100%;
+              font-size: 20px;
+              margin-top: .5em;
+            }
+          }
+
+
+
+          
+
+`}</style>
+      </div>
     </Section>
   );
 };
