@@ -24,7 +24,7 @@ const paths = [
 const Navbar = () => {
   return (
     <div className="navbar">
-      <span className="logo__content"><Logo strokeOne="white" strokeTwo="white" size="50px" />Zanle Group</span>
+      <span className="logo__content"><Logo strokeOne="white" strokeTwo="white" size="50px" />Zanle Studio</span>
       <Navigation paths={paths} />
       <LangSelect />
 

@@ -19,12 +19,11 @@ const Copyrights = () => {
                     background: ;
                     display: flex;
                     justify-content: center;
-                    background: black;
+                    background-color: #ff445a;
                 }
                 .copyrights__section .responsive {display: none}
                 .copyrights__section .content {
                     width: 2000px;
-                    background: black;
                     display: flex;
                     flex-flow: row;
                     justify-content: space-between;
@@ -34,7 +33,6 @@ const Copyrights = () => {
                 .copyrights__section .mid,
                 .copyrights__section .right {
                     color: #f1f1f1;
-                    background: black;
                     font-weight: bold;
                     font-size: 20px;
                 }

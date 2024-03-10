@@ -3,7 +3,7 @@ import Right from "./right";
 
 const About = () => {
   return (
-      <div className="about__content">
+      <div className="about__content" id="about">
         <Left />
         <Right />
         <style jsx>{`

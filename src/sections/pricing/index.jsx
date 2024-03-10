@@ -5,7 +5,7 @@ import Section from '@/components/section'
 const Pricing = () => {
     return (
         <Section>
-            <div className='pricing__container'>
+            <div className='pricing__container' id="price">
 
                 <h2 className='title'>Precios, simples <b style={{ color: "#ff445a" }}>*</b></h2>
 
@@ -24,11 +24,12 @@ const Pricing = () => {
 
                         <p className='ask'>*QUE CONTIENE ESTE PLAN?</p>
 
-                        <span className='price__item'><Icon name='check' /><p>Sitio statico</p></span>
-                        <span className='price__item'><Icon name='check' /><p>Diseño del sitio</p></span>
-                        <span className='price__item'><Icon name='check' /><p>Responsive Design</p></span>
-                        <span className='price__item'><Icon name='check' /><p>Whatsapp incluido</p></span>
-                        <span className='price__item'><Icon name='check' /><p>Galeria slide</p></span>
+                        <span className='price__item'><Icon name='check' fill='#1c1c1c' /><p>Sitio statico</p></span>
+                        <span className='price__item'><Icon name='check' fill='#1c1c1c' /><p>Diseño del sitio</p></span>
+                        <span className='price__item'><Icon name='check' fill='#1c1c1c' /><p>Responsive Design</p></span>
+                        <span className='price__item'><Icon name='check' fill='#1c1c1c' /><p>Whatsapp incluido</p></span>
+                        <span className='price__item'><Icon name='check' fill='#1c1c1c' /><p>Galeria slide</p></span>
+                        <span className='price__item'><Icon name='check' fill='#1c1c1c' /><p>Certifado SSL</p></span>
 
                         <button className='button__start__chat'>Empezar!</button>
                     </div>
@@ -37,7 +38,7 @@ const Pricing = () => {
                         <div className="top__title"><h2>Custom</h2> <h2 className='title__light__color'>Premium</h2></div>
 
                         <span className='price'>
-                            <h2 className='price__value'>*20$</h2>
+                            <h2 className='price__value'>*15$</h2>
                             <p className='price__mode'>/mensual</p>
                         </span>
 
@@ -45,11 +46,12 @@ const Pricing = () => {
 
                         <p className='ask'>*QUE CONTIENE ESTE PLAN?</p>
 
-                        <span className='price__item'><Icon name='check' /><p>Sitio statico</p></span>
-                        <span className='price__item'><Icon name='check' /><p>Diseño del sitio</p></span>
+                        <span className='price__item'><Icon name='check' /><p>Sitio auto adminstrable</p></span>
+                        <span className='price__item'><Icon name='check' /><p>Incluye dashboard para edita conteniado</p></span>
                         <span className='price__item'><Icon name='check' /><p>Responsive Design</p></span>
                         <span className='price__item'><Icon name='check' /><p>Whatsapp incluido</p></span>
-                        <span className='price__item'><Icon name='check' /><p>Galeria slide</p></span>
+                        <span className='price__item'><Icon name='check' /><p>Galeria slide customizable</p></span>
+                        <span className='price__item'><Icon name='check' /><p>Hasta 3 paginas</p></span>
 
                         <button className='button__start__chat'>Empezar!</button>
 
@@ -61,6 +63,7 @@ const Pricing = () => {
                     .pricing__container {
                         width: 1200px;
                         min-height: 100vh;
+                        padding-top: 5em;
                     }
                     .pricing__container .title {
                         width: 100%;
@@ -92,7 +95,7 @@ const Pricing = () => {
                         width: 400px;
                         background: #ffcd1d;
                         border: 1px solid #f0f0f0;
-                        color: #1c1c1c
+                        color: #1c1c1c;
                     }
                     .pricing__container .cards__container .price__montly {
                         width: 800px;

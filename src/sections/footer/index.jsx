@@ -3,8 +3,7 @@ import Logo from "@/components/logo";
 const Footer = () => {
   return (
     <footer>
-
-      <div className="footer__content">
+      <div className="footer__content" id="footer">
 
         <h2 className="contact__us">Escribenos en:</h2>
         <h2 className="contact__email">example@example.com</h2>
@@ -56,14 +55,15 @@ const Footer = () => {
           display: flex;
           justify-content: center;
           align-items: center;
-          background: black;
+          background-color: #ff445a;
         }
+       
         footer .footer__content {
           width: 1200px;
           display: flex;
           flex-flow: column;
           color:  white;
-          background: black;
+          background: transparent;
         }
         footer .footer__content .contact__us {
           width: 1200px;

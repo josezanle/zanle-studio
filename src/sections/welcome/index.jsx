@@ -1,49 +1,120 @@
-import Logo from '@/components/logo';
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+import Image from 'next/image';
+import { Icon } from '@/components/icons';
 
 const Welcome = () => {
-  const [windowWidth, setWindowWidth] = useState(typeof window !== 'undefined' ? window.innerWidth : 0);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setWindowWidth(window.innerWidth);
-    };
-
-    // Agrega el evento de cambio de tamaño de la ventana
-    if (typeof window !== 'undefined') {
-      window.addEventListener('resize', handleResize);
-    }
-
-    return () => {
-      if (typeof window !== 'undefined') {
-        window.removeEventListener('resize', handleResize);
-      }
-    };
-  }, []);
+  const imageLoader = ({ src, width, height }) => `https://images.pexels.com/${src}&cs=tinysrgb&w=${width}&h=${height}&dpr=1`
 
   return (
     <div className='welcome__container'>
-      <Logo size={
-        windowWidth < 1200 && windowWidth > 800 ? "200px" :
-          windowWidth < 800 ? "150px"
-            : "400px"
-      } 
-      strokeOne='#34dd9a'
-      strokeTwo='#34dd9a'
-      />
-      <h1>Bienvenido/a</h1>
+      <div className="left__content">
+        <div className='name_company__content'>
+
+          <Icon name="star" size={30} fill='#005de9' />
+          <Icon name="star" size={30} fill='#005de9' />
+          <Icon name="star" size={30} fill='#005de9' />
+
+          <b>Zanle Studio</b>
+        </div>
+
+        <h1> Digital <br /> Web Design</h1>
+
+        <p>Somos una agencia de desarrollo de software, paginas web y aplicaciones android</p>
+      </div>
+
+      <div className="right__content">
+        <Image
+          loader={imageLoader}
+          src="photos/20044367/pexels-photo-20044367/free-photo-of-manos-telefono-inteligente-ordenador-portatil-trabajando.jpeg?auto=compress"
+          alt="pexels-photo-20044367/free-photo-of-manos-telefono-inteligente-ordenador-portatil-trabajando"
+          width={500}
+          height={500}
+          style={{borderRadius:"2em"}}
+        />
+      </div>
 
       <style jsx>
         {`
             .welcome__container{
               width: 100%;
-              min-height: 100vh;
+              min-height: 80vh;
+              display: flex;
+              background: white;
+              margin: 4em 0;
+            }
+            .welcome__container .left__content{
+              width: 50%;
+              min-height: 80vh;
+              padding-left: 3em;
+              display: flex;
+              justify-content: center;
+              align-items: flex-end;
+              flex-flow: column;
+            }
+            .welcome__container .left__content .name_company__content {
+              width: 100%;
+              display: flex;
+              gap: 10px;
+              margin-bottom: 1em;
+            }
+            .welcome__container .left__content .name_company__content b{
+              font-size: 40px;
+            }
+            .welcome__container .left__content h1{
+              font-size: 120px;
+              margin-bottom: .5em;
+              color: #005de9;
+            }
+            
+            .welcome__container .left__content p{
+              font-size: 50px;
+              font-weight: 200;
+              width: 80%;
+            }
+            
+            .welcome__container .right__content{
+              width: 50%;
+              min-height: 80vh;
+              display: flex;
+              align-items: center;
+              gap: 1em;
+              padding-left: 4em;
+            }
+           
+            @media (max-width: 1200px) {
+
+            .welcome__container{
+              width: 100%;
+              flex-flow: column;
+              padding: 2em;
+            }
+            .welcome__container .left__content{
+              width: 100%;
+              min-height: 100%;
+              padding-left: 0;
+              display: flex;
+              justify-content: start;
+              align-items: center;
+              flex-flow: column;
+            }
+            .welcome__container .left__content .name_company__content {
+              display: flex;
+              gap: 10px;
+            }
+            .welcome__container .left__content .name_company__content b{
+              font-size: 40px;
+            }
+            
+            .welcome__container .right__content{
+              width: 100%;
+              min-height: 100%;
               justify-content: center;
               align-items: center;
-              display: flex;
-              flex-flow: column;
-              background: white;
+              padding-left: 0;
+              margin-top: 2em;
             }
+          
+          }
           `}
       </style>
     </div>

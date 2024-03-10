@@ -8,6 +8,7 @@ import { Check } from './check'
 import { Sms } from './sms'
 import { ArrowShortDown } from './arrowShortDown'
 import { ArrowShortUp } from './arrowShortUp'
+import { Star } from './star'
 
 export const Icon = ({ name = "applause", size = 20, fill = "silver", onClick = () => { } }) => {
     switch (name) {
@@ -31,6 +32,9 @@ export const Icon = ({ name = "applause", size = 20, fill = "silver", onClick = 
 
         case "sms":
             return <Sms size={size} fill={fill} onClick={onClick} />
+
+        case "star":
+            return <Star size={size} fill={fill} onClick={onClick} />
 
         case "world":
             return <World size={size} fill={fill} onClick={onClick} />

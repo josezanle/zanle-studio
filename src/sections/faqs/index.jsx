@@ -23,7 +23,7 @@ const Faqs = () => {
 
   return (
     <Section>
-      <div className="faqs__content">
+      <div className="faqs__content" id="faqs">
         <div className="left__content">
           <h2 className="faq__title">*Preguntas Frecuentes?</h2>
         </div>

@@ -15,17 +15,12 @@ import Copyrights from "@/sections/copyrights";
 export default function Home() {
   return (
     <body>
-      <Banner id="top"/>
-      <Tag borderColor="#34dd9a" fontColor="#34dd9a">Bienvenido</Tag>
+      <Banner />
       <Welcome />
-      <Tag id="about" borderColor="#2cb3ff" fontColor="#2cb3ff">Acerca</Tag>
       <About />
-      <Tag id="price" borderColor="#ff445a" fontColor="#ff445a">Precios</Tag>
       <Pricing />
       <Enterprice />
-      <Tag id="faqs" borderColor="#005de9" fontColor="#005de9">Faqs</Tag>
       <Faqs />
-      <Tag id="footer" borderColor="#ffcd1d" fontColor="#ffcd1d">Contacto</Tag>
       <Footer />
       <ScrollToTop />
       <Copyrights />
