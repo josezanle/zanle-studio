@@ -32,13 +32,14 @@ const Footer = () => {
 
           <div className="box__footer">
             <h2 className="localization">Localización</h2>
-            <a className="items">Argentina</a>
+            <Br />
+            <p className="items">Argentina</p>
             <p className="items">Perú</p>
             <Br />
             <Br />
 
             <h2 className="localization">Oficinas</h2>
-            <a className="items">100% Remoto</a>
+            <p className="items">100% Remoto</p>
             <Br />
             <Br />
 
@@ -46,10 +47,12 @@ const Footer = () => {
 
           <div className="box__footer">
             <h2 className="social">Social</h2>
-            <a className="items" target="_blank" rel="noreferrer noopener" href="https://www.facebook.com/">Facebook</a>
-            <a className="items" target="_blank" rel="noreferrer noopener" href="https://www.twitter.com/">Twitter</a>
-            <a className="items" target="_blank" rel="noreferrer noopener" href="https://www.linkedin.com/">Linkedin</a>
-            <a className="items" target="_blank" rel="noreferrer noopener" href="https://www.Instagram.com/">Instagram</a>
+            <Br />
+
+            <p className="items">Facebook</p>
+            <p className="items">Twitter</p>
+            <p className="items">Linkedin</p>
+            <p className="items">Instagram</p>
           </div>
 
         </div>
