@@ -3,7 +3,6 @@ import Image from 'next/image';
 import { Icon } from '@/components/icons';
 
 const Welcome = () => {
-  const imageLoader = ({ src, width, height }) => `https://images.pexels.com/${src}&cs=tinysrgb&w=${width}&h=${height}&dpr=1`
 
   return (
     <div className='welcome__container'>
@@ -23,8 +22,7 @@ const Welcome = () => {
 
       <div className="right__content">
         <Image
-          loader={imageLoader}
-          src="photos/20044367/pexels-photo-20044367/free-photo-of-manos-telefono-inteligente-ordenador-portatil-trabajando.jpeg?auto=compress"
+          src="https://res.cloudinary.com/dubv6xkxf/image/upload/v1710174634/jv5w3c1wlvtiudleh73z.webp"
           alt="pexels-photo-20044367/free-photo-of-manos-telefono-inteligente-ordenador-portatil-trabajando"
           width={500}
           height={500}

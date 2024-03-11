@@ -1,7 +1,7 @@
 "use client";
 
 import Logo from "@/components/logo";
-import Navbar from "@/components/navbar";
+// import Navbar from "@/components/navbar";
 
 const Banner = () => {
 
@@ -12,13 +12,6 @@ const Banner = () => {
       <div className="left__content"><div className="left__image"></div></div>
 
       <div className="right__content">
-
-        <div className="top">
-          <Logo strokeOne="white" strokeTwo="white" size="70px" background="black" />
-          <h3 className="countries">Argentina Perú</h3>
-          <div className="year">2024</div>
-        </div>
-
         <div className="bottom">
           <h1 className="name">Zanle Studio</h1>
           <h3 className="developers">LATAM DEVELOPERS</h3>
@@ -45,7 +38,7 @@ const Banner = () => {
             width: 750px;
             height: 750px;
             border-radius: 50%;
-            background-image: url("https://images.pexels.com/photos/323705/pexels-photo-323705.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+            background-image: url("https://res.cloudinary.com/dubv6xkxf/image/upload/f_webp/v1710175296/zojrvuie7bcclzljxoij.jpg");
             background-size: cover;
             background-repeat: no-repeat;
             border: 70px solid #ffcd1d;
@@ -55,13 +48,6 @@ const Banner = () => {
             min-height: 100vh;
             padding-right: 2em;
             background: white;
-          }
-          #header .right__content .top {
-            width: 100%;
-            height: 50%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
           }
 
           #header .right__content .top .countries {
@@ -73,19 +59,13 @@ const Banner = () => {
             font-weight: bold;
           }
 
-          #header .right__content .top .year {
-            color: black;
-            font-size: 50px;
-            width: 70px;
-            overflow-wrap: break-word;
-            line-height: 40px;
-            font-weight: bold;
-          }
-          
-
           #header .right__content .bottom {
             width: 100%;
-            height: 50%;
+            height: 100%;
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
           }
           #header .right__content .bottom .name {
             font-size: 100px;
@@ -100,10 +80,10 @@ const Banner = () => {
             margin-bottom: 10px;
           }
           #header .right__content .bottom .name:after {
-            width: 400px;
-            height: 400px;
-            right: -500px;
-            top: -100px;
+            width: 300px;
+            height: 300px;
+            right: -100px;
+            top: -300px;
             position: absolute;
             content: "";
             border-radius: 100%;
@@ -154,7 +134,6 @@ const Banner = () => {
             #header .right__content {
                 padding: 2em;
             }
-            #header .right__content .top {height: 100px}
             #header .right__content .bottom {
               height: 600px;
               display: flex;
@@ -205,7 +184,6 @@ const Banner = () => {
                   right: -10px;
                   top: -70px;
             }
-            
         }
 
           

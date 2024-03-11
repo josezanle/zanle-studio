@@ -9,7 +9,7 @@ const About = () => {
         <style jsx>{`
           .about__content {
             background-image: linear-gradient(to top,hsla(0, 0%, 11%, 0.7),hsla(0, 0%, 11%, 0.7)),
-              url("https://images.pexels.com/photos/8332961/pexels-photo-8332961.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+              url("https://res.cloudinary.com/dubv6xkxf/image/upload/f_webp/v1710177441/yowmwbmjdagtaxmyqbvl.jpg");
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
