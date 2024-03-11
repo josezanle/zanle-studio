@@ -4,9 +4,9 @@ const Copyrights = () => {
     return (
         <div className='copyrights__section'>
             <div className="content">
-                <div className="left">Desarrollado por Zanle Group</div>
-                <div className="mid">All rights reserved 2024</div>
-                <div className="right"> Buenos Aires, Argentina</div>
+                <p className="left">Desarrollado por Zanle Group</p>
+                <p className="mid">All rights reserved 2024</p>
+                <p className="right"> Buenos Aires, Argentina</p>
             </div>
 
             <div className="responsive">Zanle Group 2024 - All rights reserved</div>

@@ -26,7 +26,6 @@ const Welcome = () => {
           alt="pexels-photo-20044367/free-photo-of-manos-telefono-inteligente-ordenador-portatil-trabajando"
           width={500}
           height={500}
-          // layout="responsive"
           style={{ borderRadius: "2em" }}
           priority={false}
         />

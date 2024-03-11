@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="footer__content" id="footer">
 
         <h2 className="contact__us">Escribenos:</h2>
-        <h2 className="contact__email">studiozanle@gmail.com</h2>
+        <p className="contact__email">studiozanle@gmail.com</p>
 
         <a 
         className="start__project__button"
