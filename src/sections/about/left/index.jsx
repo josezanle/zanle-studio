@@ -1,7 +1,7 @@
 const Left = () => {
   return (
     <div className="text">
-      <h4>Queres</h4>
+      <h4>Quieres</h4>
       <h4>estar</h4>
       <h4>asi?</h4>
 
