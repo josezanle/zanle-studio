@@ -1,4 +1,5 @@
 'use client';
+import { useEffect, useState } from "react";
 
 import Banner from "@/sections/banner";
 import Welcome from "@/sections/welcome";
@@ -9,7 +10,6 @@ import Faqs from "@/sections/faqs";
 import Footer from "@/sections/footer";
 import ScrollToTop from "@/components/scrollToTop";
 import Copyrights from "@/sections/copyrights";
-import { useEffect, useState } from "react";
 
 const Body = () => {
   

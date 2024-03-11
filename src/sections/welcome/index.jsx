@@ -24,8 +24,8 @@ const Welcome = () => {
         <Image
           src="https://res.cloudinary.com/dubv6xkxf/image/upload/v1710174634/jv5w3c1wlvtiudleh73z.webp"
           alt="pexels-photo-20044367/free-photo-of-manos-telefono-inteligente-ordenador-portatil-trabajando"
-          width={500}
-          height={500}
+          width={640}
+          height={427}
           style={{ borderRadius: "2em" }}
           priority={false}
         />
