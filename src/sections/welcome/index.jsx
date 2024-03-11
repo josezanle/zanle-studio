@@ -20,18 +20,17 @@ const Welcome = () => {
         <p>Somos una agencia de desarrollo de software, paginas web y aplicaciones android</p>
       </div>
 
-      {/* <div className="right__content"> */}
+      <div className="right__content">
         <Image
           src="https://res.cloudinary.com/dubv6xkxf/image/upload/v1710174634/jv5w3c1wlvtiudleh73z.webp"
           alt="pexels-photo-20044367/free-photo-of-manos-telefono-inteligente-ordenador-portatil-trabajando"
           width={500}
           height={500}
-          layout="responsive"
-          style={{borderRadius:"2em"}}
-          // loading='lazy'
-          priority
+          // layout="responsive"
+          style={{ borderRadius: "2em" }}
+          priority={false}
         />
-      {/* </div> */}
+      </div>
 
       <style jsx>
         {`
@@ -72,14 +71,14 @@ const Welcome = () => {
               width: 80%;
             }
             
-            {/* .welcome__container .right__content{
+            .welcome__container .right__content{
               width: 50%;
               min-height: 80vh;
               display: flex;
               align-items: center;
               gap: 1em;
               padding-left: 4em;
-            } */}
+            }
            
             @media (max-width: 1200px) {
 

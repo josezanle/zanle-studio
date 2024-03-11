@@ -9,11 +9,12 @@ import Faqs from "@/sections/faqs";
 import Footer from "@/sections/footer";
 import ScrollToTop from "@/components/scrollToTop";
 import Copyrights from "@/sections/copyrights";
+import { useEffect, useState } from "react";
 
-
-export default function Home() {
+const Body = () => {
+  
   return (
-    <body>
+    <div className="body">
       <Banner />
       <Welcome />
       <About />
@@ -23,7 +24,17 @@ export default function Home() {
       <Footer />
       <ScrollToTop />
       <Copyrights />
-    </body>
+    </div>
+  )
+}
 
-  );
+
+export default function Home() {
+  const [isClient, setIsClient] = useState(false)
+ 
+  useEffect(() => {
+    setIsClient(true)
+  }, [])
+
+  return isClient ? <Body /> : null 
 }
