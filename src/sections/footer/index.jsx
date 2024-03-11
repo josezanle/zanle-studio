@@ -38,10 +38,10 @@ const Footer = () => {
 
           <div className="box__footer">
             <h2 className="social">Social</h2>
-            <a className="items" rel="noreferrer noopener" href="#">Facebook</a>
-            <a className="items" rel="noreferrer noopener" href="#">Twitter</a>
-            <a className="items" rel="noreferrer noopener" href="#">Linkedin</a>
-            <a className="items" rel="noreferrer noopener" href="#">Instagram</a>
+            <a className="items" rel="noreferrer noopener" href="https://www.facebook.com/">Facebook</a>
+            <a className="items" rel="noreferrer noopener" href="https://www.twitter.com/">Twitter</a>
+            <a className="items" rel="noreferrer noopener" href="https://www.linkedin.com/">Linkedin</a>
+            <a className="items" rel="noreferrer noopener" href="https://www.Instagram.com/">Instagram</a>
           </div>
 
         </div>
