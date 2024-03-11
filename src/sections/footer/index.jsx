@@ -6,16 +6,20 @@ const Footer = () => {
     <footer>
       <div className="footer__content" id="footer">
 
-        <h2 className="contact__us">Escribenos en:</h2>
-        <h2 className="contact__email">example@example.com</h2>
+        <h2 className="contact__us">Escribenos:</h2>
+        <h2 className="contact__email">studiozanle@gmail.com</h2>
 
-        <button className="start__project__button">Chateanos</button>
+        <a 
+        className="start__project__button"
+        href="mailto:studiozanle@gmail.com?subject=Presupuesto para desarrollo web"
+        >Contactar</a>
 
         <hr className="footer__divisor" />
 
         <div className="columns__container">
           <div className="box__footer">
-            <h2 className="logo__name"><Logo size="50px" strokeOne="white" strokeTwo="white" /> Zanle Group</h2>
+            <h2 className="logo__name"><Logo size="50px" strokeOne="white" strokeTwo="white" /> Zanle Studio</h2>
+            <Br />
             <Br />
             <Br />
             <p className="items">LATAM DEVELOPERS</p>
@@ -24,15 +28,19 @@ const Footer = () => {
           </div>
 
           <Br />
+          <Br />
 
           <div className="box__footer">
             <h2 className="localization">Localización</h2>
             <a className="items">Argentina</a>
             <p className="items">Perú</p>
             <Br />
+            <Br />
 
             <h2 className="localization">Oficinas</h2>
             <a className="items">100% Remoto</a>
+            <Br />
+            <Br />
 
           </div>
 
@@ -78,6 +86,7 @@ const Footer = () => {
           color: #f0f0f0;
           border: 1px solid #f0f0f0;
           cursor: pointer;
+          text-align: center;
         }
         .footer__content .start__project__button:hover {
           color: white;
@@ -133,7 +142,6 @@ const Footer = () => {
           }
           .footer__content .contact__email {
             font-size: 70px;
-            display: contents;
           }
           .footer__content .footer__divisor {width: 100%}
 
@@ -156,12 +164,6 @@ const Footer = () => {
         @media (max-width: 450px) {
           .footer__content .columns__container .box__footer {width: 100%}
           .footer__content .columns__container .box__footer .logo__name {font-size: 30px}
-          .footer__content .contact__us {
-          }
-          .footer__content .contact__email {
-          }
-          .footer__content .columns__container{
-          }
         }
 
       `}</style>

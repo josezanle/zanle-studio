@@ -6,16 +6,13 @@ const Faqs = () => {
   const [openSelect, setOpenSelect] = useState(null);
 
   const selectsData = [
-    { id: 1, label: 'Que es un sitio Estatico', option: 'Option 1A' },
-    { id: 2, label: 'Que es Responsive Design', option: 'Option 2A' },
-    { id: 3, label: 'Estos precios tienen soporte?', option: 'Option 3A' },
-    { id: 4, label: 'Que es un sitio Estatico', option: 'Option 1A' },
-    { id: 5, label: 'Que es Responsive Design', option: 'Option 2A' },
-    { id: 6, label: 'Estos precios tienen soporte?', option: 'Option 3A' },
-    { id: 7, label: 'Que es un sitio Estatico', option: 'Option 1A' },
-    { id: 8, label: 'Que es Responsive Design', option: 'Option 2A' },
-    { id: 9, label: 'Estos precios tienen soporte?', option: 'Option 3A' },
-    { id: 10, label: 'Estos precios tienen soporte?', option: 'Option 3A' },
+    { id: 1, label: 'Que es un sitio Estatico?', option: 'Es un sitio web que muestra contenido fijo y no cambia según las acciones del usuario.' },
+    { id: 2, label: 'Diferencia entre un sitio estático y uno dinámico?', option: 'Uno muestra contenido fijo, mientras que un sitio dinámico permite actualizar contenido en tiempo real.' },
+    { id: 3, label: 'Que es Responsive Design?', option: 'Es un enfoque de diseño web que garantiza que el sitio se adapte y se vea bien en diferentes dispositivos y tamaños de pantalla.' },
+    { id: 4, label: 'Cuánto tiempo lleva un desarrollo web?', option: 'Depende del plan, pero sitios estaticos, 2 dias, el premium 3 semanas a 1 mes.' },
+    { id: 5, label: 'Ofrecen servicios de mantenimiento web después del lanzamiento?', option: 'Si, solo disponible para los planes Premiun y Enterprice.' },
+    { id: 6, label: 'Cómo garantizan la seguridad de los sitios web que desarrollan?', option: 'Utilizamos las mas recientes actualizaciones de los servicios que utilizamos.' },
+    { id: 7, label: 'Puedo solicitar cambios en el diseño después de que comience el desarrollo?', option: 'solo disponible para los planes Premiun y Enterprice.' },
   ];
 
   const handleToggle = (id) => setOpenSelect((prevOpenSelect) => (prevOpenSelect === id ? null : id));
