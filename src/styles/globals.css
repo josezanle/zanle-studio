@@ -31,12 +31,6 @@ p {
   line-height: 1em;
 }
 
-.row {
-  max-width: 100vw;
-  display: flex;
-  align-items: center;
-}
-
 button,
 select,
 hr {
