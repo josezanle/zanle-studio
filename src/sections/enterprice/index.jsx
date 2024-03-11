@@ -2,6 +2,12 @@ import { Icon } from "@/components/icons";
 import Section from "@/components/section";
 
 const Enterprice = () => {
+  const enviarWhatsApp = (plan) => {
+    const telefono = '+51925822952'; // jovan
+    const mensaje = `Hola, estoy interesado en el plan ${plan}.`;
+    const url = `https://wa.me/${telefono}?text=${encodeURIComponent(mensaje)}`;
+    window.location.href = url;
+  };
   return (
     <Section>
       <div className="content">
@@ -23,7 +29,10 @@ const Enterprice = () => {
           <p className="bottom__text">CERTIFICADO SSL  <b style={{ color: "#ffcd1d" }}>GRATIS</b> +</p>
           <p className="bottom__text">DOMINIO INCLUIDO</p>
 
-          <button className='button__start__chat'>Empezar!</button>
+          <button
+            className='button__start__chat'
+            onClick={() => enviarWhatsApp("Enterprice")}
+          >Empezar!</button>
         </div>
 
         <style jsx>

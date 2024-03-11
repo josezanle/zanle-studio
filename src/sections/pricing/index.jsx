@@ -3,6 +3,14 @@ import { Icon } from '@/components/icons'
 import Section from '@/components/section'
 
 const Pricing = () => {
+
+    const enviarWhatsApp = (plan) => {
+        const telefono = '+51 925 822 952'; // jovan
+        const mensaje = `Hola, estoy interesado en el plan ${plan}.`;
+        const url = `https://wa.me/${telefono}?text=${encodeURIComponent(mensaje)}`;
+        window.location.href = url;
+    };
+
     return (
         <Section>
             <div className='pricing__container' id="price">
@@ -30,7 +38,7 @@ const Pricing = () => {
                         <span className='price__item'><Icon name='check' fill='#1c1c1c' /><p>Galeria slide</p></span>
                         <span className='price__item'><Icon name='check' fill='#1c1c1c' /><p>Certifado SSL</p></span>
 
-                        <button className='button__start__chat'>Empezar!</button>
+                        <button className='button__start__chat' onClick={() => enviarWhatsApp("Static")}>Empezar!</button>
                     </div>
 
                     <div className="price__montly">
@@ -45,20 +53,23 @@ const Pricing = () => {
 
                         <p className='ask'>*QUE CONTIENE ESTE PLAN?</p>
 
-                        <span className='price__item'><Icon name='check' fill='white'/><p>Sitio auto adminstrable</p></span>
-                        <span className='price__item'><Icon name='check' fill='white'/><p>Incluye dashboard para edita conteniado</p></span>
-                        <span className='price__item'><Icon name='check' fill='white'/><p>Responsive Design</p></span>
-                        <span className='price__item'><Icon name='check' fill='white'/><p>Whatsapp incluido</p></span>
-                        <span className='price__item'><Icon name='check' fill='white'/><p>Galeria slide customizable</p></span>
-                        <span className='price__item'><Icon name='check' fill='white'/><p>Hasta 3 paginas</p></span>
+                        <span className='price__item'><Icon name='check' fill='white' /><p>Sitio auto adminstrable</p></span>
+                        <span className='price__item'><Icon name='check' fill='white' /><p>Incluye dashboard para edita conteniado</p></span>
+                        <span className='price__item'><Icon name='check' fill='white' /><p>Responsive Design</p></span>
+                        <span className='price__item'><Icon name='check' fill='white' /><p>Whatsapp incluido</p></span>
+                        <span className='price__item'><Icon name='check' fill='white' /><p>Galeria slide customizable</p></span>
+                        <span className='price__item'><Icon name='check' fill='white' /><p>Hasta 3 paginas</p></span>
 
-                        <button className='button__start__chat'>Empezar!</button>
+                        <button
+                            className='button__start__chat'
+                            onClick={() => enviarWhatsApp("Premium")}
+                        >Empezar!</button>
 
                     </div>
                 </div>
 
-<style jsx>
-{`
+                <style jsx>
+                    {`
                     .pricing__container {
                         width: 1200px;
                         min-height: 100vh;
