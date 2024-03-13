@@ -1,13 +1,28 @@
-"use client";
+import Navbar from "@/components/navbar";
 
-import Logo from "@/components/logo";
-// import Navbar from "@/components/navbar";
+const paths = [
+  {
+    name: "Acerca",
+    href: "about"
+  },
+  {
+    name: "Precios",
+    href: "price"
+  },
+  {
+    name: "FAQs",
+    href: "faqs"
+  },
+  {
+    name: "Contacto",
+    href: "footer"
+  },
+];
 
 const Banner = () => {
-
   return (
     <header id="header">
-      {/* <Navbar /> */}
+      <Navbar paths={paths} />
 
       <div className="left__content"><div className="left__image"></div></div>
 

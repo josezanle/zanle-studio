@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Navigation = ({ paths }) => {
+const Navigation = ({ paths, isSticky }) => {
     const handleClick = (path) => {
         // Lógica para manejar la navegación usando el ID
         const element = document.getElementById(path);
@@ -30,7 +30,7 @@ const Navigation = ({ paths }) => {
                     nav ul li a {
                         position: relative;
                         font-size: 30px;
-                        color: white;
+                        color: ${isSticky ? "white" : "black"};
                         cursor: pointer;
                         font-weight: bold;
                         text-decoration: none;
@@ -43,12 +43,12 @@ const Navigation = ({ paths }) => {
                         bottom: 0;
                         height: 3px;
                         width: 0;
-                        background-color: white; 
+                        background-color: ${isSticky ? "white" : "black"}; 
                         transition: width 0.3s ease; 
                     }
 
                     nav ul li a:hover::after {width: 100%}
-                    nav ul li a:hover {color: white}
+                    nav ul li a:hover {color: ${isSticky ? "white" : "black"}}
                             
             `}</style>
 
