@@ -1,6 +1,7 @@
 import React from 'react'
 import { Icon } from '@/components/icons'
 import Section from '@/components/section'
+import { Br } from '@/components/br';
 
 const Pricing = () => {
 
@@ -38,6 +39,10 @@ const Pricing = () => {
                         <span className='price__item'><Icon name='check' fill='#1c1c1c' /><p>Galeria slide</p></span>
                         <span className='price__item'><Icon name='check' fill='#1c1c1c' /><p>Certifado SSL</p></span>
 
+                        <Br />
+
+                        <p className='ask'>NO INCLUYE DOMINIO</p>
+
                         <button className='button__start__chat' onClick={() => enviarWhatsApp("Static")}>Empezar!</button>
                     </div>
 
@@ -59,6 +64,10 @@ const Pricing = () => {
                         <span className='price__item'><Icon name='check' fill='white' /><p>Whatsapp incluido</p></span>
                         <span className='price__item'><Icon name='check' fill='white' /><p>Galeria slide customizable</p></span>
                         <span className='price__item'><Icon name='check' fill='white' /><p>Hasta 3 paginas</p></span>
+
+                        <Br />
+
+                        <p className='ask'>NO INCLUYE DOMINIO</p>
 
                         <button
                             className='button__start__chat'
