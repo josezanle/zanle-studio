@@ -58,11 +58,8 @@ const Navbar = ({paths}) => {
           font-size: 22px;
         }
 
-        @media (max-width: 950px) {
-          .navbar{
-            display: none;
-          }
-        }
+        @media (max-width: 950px) {.navbar{display: none}}
+        
       `}</style>
     </div>
   );

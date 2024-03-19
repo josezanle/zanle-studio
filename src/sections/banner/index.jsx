@@ -28,7 +28,7 @@ const Banner = () => {
 
       <div className="right__content">
         <div className="bottom">
-          <h1 className="name">Zanle Studio</h1>
+          <h1 className="name">Zanle <br /> Studio </h1>
           <h3 className="developers">LATAM DEVELOPERS</h3>
         </div>
       </div>
@@ -74,8 +74,6 @@ const Banner = () => {
           }
           #header .right__content .name {
             font-size: 100px;
-            width: 300px;
-            overflow-wrap: break-word;
             line-height: 80px;
             font-weight: bold;
             position: relative;
@@ -170,9 +168,7 @@ const Banner = () => {
                   height: 200px;
                   border: 10px solid #ffcd1d;
             }
-            #header .right__content,  #header .right__content {
-                  height: 400px;
-            }
+            #header .right__content,  #header .right__content {height: 400px}
         }
 
         @media (max-width: 500px) {

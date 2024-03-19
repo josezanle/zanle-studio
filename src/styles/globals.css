@@ -1,10 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&display=swap');
-
 html,
 body {
   scroll-behavior: smooth;
   color: #222222;
-  
   box-sizing: border-box;
   background: #ffffff;
 }
@@ -18,7 +15,7 @@ a {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: "Catamaran";
+  font-family: "Catamaran", sans-serif;
 }
 
 h1,
