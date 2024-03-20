@@ -32,7 +32,7 @@ const Enterprice = () => {
           <button
             className='button__start__chat'
             onClick={() => enviarWhatsApp("Enterprice")}
-          >Empezar!</button>
+          >Empezar</button>
         </div>
 
         <style jsx>
