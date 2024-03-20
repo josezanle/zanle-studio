@@ -28,7 +28,7 @@ const Banner = () => {
 
       <div className="right__content">
         <div className="bottom">
-          <h1 className="name">Zanle Studio</h1>
+          <h1 className="name">Zanle <br /> Studio </h1>
           <h3 className="developers">LATAM DEVELOPERS</h3>
         </div>
       </div>
@@ -62,16 +62,6 @@ const Banner = () => {
             width: 50%;
             min-height: 100vh;
             padding-right: 2em;
-            background: white;
-          }
-
-          #header .right__content .top .countries {
-            color: black;
-            font-size: 30px;
-            width: 150px;
-            overflow-wrap: break-word;
-            line-height: 40px;
-            font-weight: bold;
           }
 
           #header .right__content .bottom {
@@ -82,10 +72,8 @@ const Banner = () => {
             justify-content: center;
             align-items: center;
           }
-          #header .right__content .bottom .name {
+          #header .right__content .name {
             font-size: 100px;
-            width: 300px;
-            overflow-wrap: break-word;
             line-height: 80px;
             font-weight: bold;
             position: relative;
@@ -94,7 +82,8 @@ const Banner = () => {
             padding: 5px;
             margin-bottom: 10px;
           }
-          #header .right__content .bottom .name:after {
+
+          #header .right__content .name:after {
             width: 300px;
             height: 300px;
             right: -100px;
@@ -104,7 +93,7 @@ const Banner = () => {
             border-radius: 100%;
             background: #ff445a;
           }
-          #header .right__content .bottom .name:before {
+          #header .right__content .name:before {
             width: 150px;
             height: 150px;
             position: absolute;
@@ -115,12 +104,12 @@ const Banner = () => {
             background: #005de9;
           }
 
-          #header .right__content .bottom .developers {
+          #header .right__content .developers {
             color: black;
             font-weight: bold;
             border: 2px solid black;
             border-radius: 10px;
-            padding: 3px 10px;
+            padding: 5px 10px 3px;
             display: inline;
           }
 
@@ -130,7 +119,7 @@ const Banner = () => {
               height: 500px;
             }
 
-            #header .right__content .bottom .name:after {
+            #header .right__content .name:after {
                 width: 270px;
                 height: 270px;
                 right: -350px;
@@ -149,7 +138,7 @@ const Banner = () => {
             #header .right__content {
                 padding: 2em;
             }
-            #header .right__content .bottom {
+            #header .right__content {
               height: 600px;
               display: flex;
               flex-flow: column;
@@ -159,7 +148,7 @@ const Banner = () => {
           }
 
         @media (max-width: 1220px) {
-            #header .right__content .bottom .name:after {
+            #header .right__content .name:after {
                   width: 150px;
                   height: 150px;
                   right: -200px;
@@ -168,7 +157,7 @@ const Banner = () => {
         }
 
         @media (max-width: 770px) {
-            #header .right__content .bottom .name:after {
+            #header .right__content .name:after {
                   width: 100px;
                   height: 100px;
                   right: -50px;
@@ -179,30 +168,25 @@ const Banner = () => {
                   height: 200px;
                   border: 10px solid #ffcd1d;
             }
-            #header .right__content .bottom,  #header .right__content {
-                  height: 400px;
-            }
+            #header .right__content,  #header .right__content {height: 400px}
         }
 
         @media (max-width: 500px) {
-            #header .right__content .bottom .name:after {
+            #header .right__content .name:after {
                   right: -50px;
                   top: -70px;
             }
-            #header .right__content .bottom .name:before {
+            #header .right__content .name:before {
                   left: -100px;
                   bottom: -170px;
           }
         }
         @media (max-width: 410px) {
-            #header .right__content .bottom .name:after {
+            #header .right__content .name:after {
                   right: -10px;
                   top: -70px;
             }
         }
-
-          
-          
 `}
       </style>
     </header>
