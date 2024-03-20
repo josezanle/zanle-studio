@@ -29,5 +29,6 @@ jobs:
             cd /home/jovan/zanle-web
             git pull origin main  # Cambia 'main' si usas una rama diferente
             npm install
+            node -v
             npm run build --if-present
             pm2 reload zanle
