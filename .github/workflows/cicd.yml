@@ -24,10 +24,11 @@ jobs:
         with:
           host: ${{ secrets.VPS_HOST }}
           username: ${{ secrets.VPS_USERNAME }}
-          key: ${{ secrets.VPS_PASSWORD }}
+          password: ${{ secrets.VPS_PASSWORD }}
           script: |
             cd /home/jovan/zanle-web
             git pull origin main  # Cambia 'main' si usas una rama diferente
             npm install
+            node -v
             npm run build --if-present
             pm2 reload zanle
