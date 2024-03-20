@@ -33,4 +33,4 @@ jobs:
             nvm use 18.17.0
             node -v
             npm run build --if-present
-            pm2 reload zanle
+            /home/jovan/.nvm/versions/node/v18.17.0/bin/pm2 reload zanle
