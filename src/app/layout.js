@@ -6,6 +6,10 @@ const catamaran = Catamaran({ subsets: ['latin'] })
 export const metadata = {
   title: 'Zanle Studio',
   description: 'Consultora de desarrollo de software',
+  robots: {
+    follow: true,
+    index: true
+  },
   og: {
     title: 'Zanle Studio',
     type: 'blog',
