@@ -21,7 +21,7 @@ const Pricing = () => {
 
                 <div className="cards__container">
                     <div className="price__simple">
-                        <div className="top__title"><h2>Static</h2> <h2 className='title__light__color'>Simple</h2></div>
+                        <div className="top__title"><h2>Static</h2></div>
 
                         <span className='price'>
                             <h2 className='price__value'>*10$</h2>
@@ -47,7 +47,7 @@ const Pricing = () => {
                     </div>
 
                     <div className="price__montly">
-                        <div className="top__title"><h2>Custom</h2> <h2 className='title__light__color'>Premium</h2></div>
+                        <div className="top__title"><h2>Premium</h2></div>
 
                         <span className='price'>
                             <h2 className='price__value'>*15$</h2>
@@ -130,8 +130,6 @@ const Pricing = () => {
                         margin-bottom: 25px;
                         gap: 10px;
                     }
-                    .pricing__container .cards__container .price__simple .top__title .title__light__color{color: rgba(28, 28, 28, 0.2)}
-                    .pricing__container .cards__container .price__montly .top__title .title__light__color{color: rgba(255, 255, 255, 0.5)}
 
                     .pricing__container .cards__container .price__simple .divisor,
                     .pricing__container .cards__container .price__montly .divisor
