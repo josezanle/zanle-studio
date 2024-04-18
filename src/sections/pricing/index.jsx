@@ -2,8 +2,14 @@ import React from 'react'
 import { Icon } from '@/components/icons'
 import Section from '@/components/section'
 import { Br } from '@/components/br';
+import useLocation from '@/hooks/useLocation';
 
 const Pricing = () => {
+
+    const { data } = useLocation()
+    const lowercaseCountryCode = data?.countryCode?.toLowerCase()
+
+    
 
     const enviarWhatsApp = (plan) => {
         const telefono = '+51 925 822 952'; // jovan

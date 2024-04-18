@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import Logo from "../logo";
-import LangSelect from "./langSelector";
 import Navigation from "./navigation";
+import CountryFlag from "./langSelector";
 
 
 const Navbar = ({paths}) => {
@@ -27,12 +27,12 @@ const Navbar = ({paths}) => {
     <div className={`navbar ${isSticky ? "sticky" : ""}`}>
       <span className="logo__content"><Logo background="black" strokeOne="white" strokeTwo="white" size="50px" />Zanle Studio</span>
       <Navigation paths={paths} isSticky={isSticky} />
-      <LangSelect />
+      <CountryFlag />
 
       <style jsx>{`
         .navbar {
           width: 100%;
-          padding: 0 3em;
+          padding: 0 2em;
           height: 80px;
           position: fixed;
           top: 0;
@@ -42,13 +42,13 @@ const Navbar = ({paths}) => {
           align-items: center;
           z-index: 100;
           background: transparent;
-          backdrop-filter: blur(0.5em);
           transition: background-color 0.3s ease-in-out;
         }
 
         .navbar.sticky {
-          padding: 1em;
+          padding: 2em;
           background-color: rgba(0, 0, 0, 0.7); 
+          backdrop-filter: blur(0.7em);
         }
 
         .navbar .logo__content{
