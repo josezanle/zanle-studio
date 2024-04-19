@@ -15,12 +15,13 @@ import useLocation from '@/hooks/useLocation'
 // const ADflagIcon = https://flagcdn.com/20x15/ad.png andora
 
 const CountryFlag = () => {
-    const { data } = useLocation()
-    const lowercaseCountryCode = data?.countryCode?.toLowerCase()
+    // const code = useLocation()
+    // console.log("code", code)
+    // const countryCode = code?.toLowerCase()
 
     return (
         <div className='countryFlag'>
-            {data?.countryCode && <img src={`https://flagcdn.com/20x15/${lowercaseCountryCode}.png`} alt={data?.country} />}
+            {/* {countryCode && <img src={`https://flagcdn.com/20x15/${countryCode}.png`} alt={countryCode + " " + "img"} />} */}
 
             <RotateWorld />
 
