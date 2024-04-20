@@ -7,7 +7,6 @@ import useLocation from '@/hooks/useLocation';
 const Pricing = () => {
     const { countryCode } = useLocation()
 
-    const code = countryCode;
     const enviarWhatsApp = (plan) => {
         const telefono = '+51 925 822 952';
         const mensaje = `Hola, estoy interesado en el plan ${plan}.`;
@@ -57,7 +56,7 @@ const Pricing = () => {
                         <div className="top__title"><h2>Static</h2></div>
 
                         <span className='price'>
-                            <h2 className='price__value'>*{price()?.static}</h2>
+                            <h2 className='price__value'>*{price(countryCode)?.static}</h2>
                             <p className='price__mode'>/Pago unico</p>
                         </span>
 
@@ -83,7 +82,7 @@ const Pricing = () => {
                         <div className="top__title"><h2>Premium</h2></div>
 
                         <span className='price'>
-                            <h2 className='price__value'>*{price()?.premium}</h2>
+                            <h2 className='price__value'>*{price(countryCode)?.premium}</h2>
                             <p className='price__mode'>/mensual</p>
                         </span>
 
