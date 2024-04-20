@@ -4,24 +4,13 @@ import React from 'react'
 import RotateWorld from '@/components/rotateWorld'
 import useLocation from '@/hooks/useLocation'
 
-
-// const flagIcon = `https://flagcdn.com/20x15/${isoFlag}.png`
-
-// const ESflagIcon = https://flagcdn.com/20x15/es.png
-// const PEflagIcon = https://flagcdn.com/20x15/pe.png
-// const ARflagIcon = https://flagcdn.com/20x15/ar.png
-// const UYflagIcon = https://flagcdn.com/20x15/uy.png
-// const VEflagIcon = https://flagcdn.com/20x15/ve.png
-// const ADflagIcon = https://flagcdn.com/20x15/ad.png andora
-
 const CountryFlag = () => {
-    // const code = useLocation()
-    // console.log("code", code)
-    // const countryCode = code?.toLowerCase()
+    const { countryCode } = useLocation()
+    const code = countryCode?.toLowerCase()
 
     return (
         <div className='countryFlag'>
-            {/* {countryCode && <img src={`https://flagcdn.com/20x15/${countryCode}.png`} alt={countryCode + " " + "img"} />} */}
+            {code && <img src={`https://flagcdn.com/20x15/${code}.png`} alt={code + " " + "img"} />}
 
             <RotateWorld />
 

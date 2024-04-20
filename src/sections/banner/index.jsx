@@ -1,4 +1,5 @@
 import Navbar from "@/components/navbar";
+import CountryFlag from "@/components/navbar/langSelector";
 
 const paths = [
   {
@@ -23,6 +24,7 @@ const Banner = () => {
   return (
     <header id="header">
       <Navbar paths={paths} />
+      <div className="responsive__flag"><CountryFlag /></div>
 
       <div className="left__content"><div className="left__image"></div></div>
 
@@ -39,6 +41,12 @@ const Banner = () => {
             width: 100%;
             min-height: 100vh;
             display: flex;
+          }
+          .responsive__flag{
+            display: none;
+            position: fixed;
+            top:1em;
+            left: 1em;
           }
           
           #header .left__content {
@@ -154,6 +162,11 @@ const Banner = () => {
                   right: -200px;
                   top: -150px;
               }
+        }
+        @media (max-width: 950px) {
+          .responsive__flag{
+            display: block;
+          }
         }
 
         @media (max-width: 770px) {

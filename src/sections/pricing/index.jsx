@@ -2,14 +2,46 @@ import React from 'react'
 import { Icon } from '@/components/icons'
 import Section from '@/components/section'
 import { Br } from '@/components/br';
+import useLocation from '@/hooks/useLocation';
 
 const Pricing = () => {
+    const { countryCode } = useLocation()
+
+    const code = countryCode;
     const enviarWhatsApp = (plan) => {
-        const telefono = '+51 925 822 952'; // jovan
+        const telefono = '+51 925 822 952';
         const mensaje = `Hola, estoy interesado en el plan ${plan}.`;
         const url = `https://wa.me/${telefono}?text=${encodeURIComponent(mensaje)}`;
         window.location.href = url;
     };
+
+    const price = (code) => {
+        switch (code) {
+            case code === "PE":
+                return {
+                    static: "20$",
+                    premium: "30$"
+                }
+
+            case code === "ES":
+                return {
+                    static: "40$",
+                    premium: "60$"
+                }
+
+            case code === "AR":
+                return {
+                    static: "10$",
+                    premium: "15$"
+                }
+
+            default:
+                return {
+                    static: "10$",
+                    premium: "15$"
+                };
+        }
+    }
 
     return (
         <Section>
@@ -18,12 +50,14 @@ const Pricing = () => {
                 <h2 className='title'>Precios, simples <b style={{ color: "#ff445a" }}>*</b></h2>
                 <p className='paragraph'>Simplificamos los precios y oportunidades, para que sea mas eficiente, rapido y facil, al momento de tomar una desicion, que te impulse a crecer en tu sitio web</p>
 
+                <p>*Precio estimado en Dolares(US$) como referencia.</p>
+
                 <div className="cards__container">
                     <div className="price__simple">
                         <div className="top__title"><h2>Static</h2></div>
 
                         <span className='price'>
-                            <h2 className='price__value'>*10$</h2>
+                            <h2 className='price__value'>*{price()?.static}</h2>
                             <p className='price__mode'>/Pago unico</p>
                         </span>
 
@@ -49,7 +83,7 @@ const Pricing = () => {
                         <div className="top__title"><h2>Premium</h2></div>
 
                         <span className='price'>
-                            <h2 className='price__value'>*15$</h2>
+                            <h2 className='price__value'>*{price()?.premium}</h2>
                             <p className='price__mode'>/mensual</p>
                         </span>
 
@@ -74,6 +108,7 @@ const Pricing = () => {
                         >Empezar!</button>
 
                     </div>
+                    
                 </div>
 
                 <style jsx>

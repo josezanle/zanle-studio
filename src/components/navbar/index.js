@@ -3,8 +3,7 @@ import Logo from "../logo";
 import Navigation from "./navigation";
 import CountryFlag from "./langSelector";
 
-
-const Navbar = ({paths}) => {
+const Navbar = ({ paths }) => {
   const [isSticky, setIsSticky] = useState(false);
 
   useEffect(() => {
@@ -27,7 +26,7 @@ const Navbar = ({paths}) => {
     <div className={`navbar ${isSticky ? "sticky" : ""}`}>
       <span className="logo__content"><Logo background="black" strokeOne="white" strokeTwo="white" size="50px" />Zanle Studio</span>
       <Navigation paths={paths} isSticky={isSticky} />
-      <CountryFlag />
+      <CountryFlag/>
 
       <style jsx>{`
         .navbar {
