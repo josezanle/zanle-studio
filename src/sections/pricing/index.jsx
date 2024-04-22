@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Icon } from '@/components/icons'
 import Section from '@/components/section'
 import { Br } from '@/components/br';
@@ -14,33 +14,37 @@ const Pricing = () => {
         window.location.href = url;
     };
 
-    const price = (code) => {
-        switch (code) {
-            case code === "PE":
-                return {
-                    static: "20$",
-                    premium: "30$"
-                }
+    useEffect(() => {
+        const price = (code) => {
+            switch (code) {
+                case code === "PE":
+                    return {
+                        static: "20$",
+                        premium: "30$"
+                    }
 
-            case code === "ES":
-                return {
-                    static: "40$",
-                    premium: "60$"
-                }
+                case code === "ES":
+                    return {
+                        static: "40$",
+                        premium: "60$"
+                    }
 
-            case code === "AR":
-                return {
-                    static: "10$",
-                    premium: "15$"
-                }
+                case code === "AR":
+                    return {
+                        static: "10$",
+                        premium: "15$"
+                    }
 
-            default:
-                return {
-                    static: "10$",
-                    premium: "15$"
-                };
+                default:
+                    return {
+                        static: "10$",
+                        premium: "15$"
+                    };
+            }
         }
-    }
+        price()
+
+    }, [countryCode]);
 
     return (
         <Section>
@@ -107,7 +111,7 @@ const Pricing = () => {
                         >Empezar!</button>
 
                     </div>
-                    
+
                 </div>
 
                 <style jsx>
