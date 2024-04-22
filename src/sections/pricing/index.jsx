@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Icon } from '@/components/icons'
 import Section from '@/components/section'
 import { Br } from '@/components/br';
@@ -6,6 +6,10 @@ import useLocation from '@/hooks/useLocation';
 
 const Pricing = () => {
     const { countryCode } = useLocation()
+    const [price, setPrice] = useState({
+        static: "10$",
+        premium: "15$"
+    });
 
     const enviarWhatsApp = (plan) => {
         const telefono = '+51 925 822 952';
@@ -14,36 +18,40 @@ const Pricing = () => {
         window.location.href = url;
     };
 
-    useEffect(() => {
-        const price = (code) => {
-            switch (code) {
-                case code === "PE":
-                    return {
-                        static: "20$",
-                        premium: "30$"
-                    }
+    const pricingCalc = (code) => {
+        switch (code) {
+            case "PE":
+                setPrice({
+                    static: "20$",
+                    premium: "30$"
+                });
+                break;
 
-                case code === "ES":
-                    return {
-                        static: "40$",
-                        premium: "60$"
-                    }
+            case "ES":
+                setPrice({
+                    static: "40$",
+                    premium: "60$"
+                });
+                break;
 
-                case code === "AR":
-                    return {
-                        static: "10$",
-                        premium: "15$"
-                    }
+            case "AR":
+                setPrice({
+                    static: "10$",
+                    premium: "15$"
+                });
+                break;
 
-                default:
-                    return {
-                        static: "10$",
-                        premium: "15$"
-                    };
-            }
+            default:
+                setPrice({
+                    static: "10$",
+                    premium: "15$"
+                });
         }
-        price()
+    };
 
+
+    useEffect(() => {
+        pricingCalc(countryCode)
     }, [countryCode]);
 
     return (
@@ -60,7 +68,7 @@ const Pricing = () => {
                         <div className="top__title"><h2>Static</h2></div>
 
                         <span className='price'>
-                            <h2 className='price__value'>*{price(countryCode)?.static}</h2>
+                            <h2 className='price__value'>*{price?.static}</h2>
                             <p className='price__mode'>/Pago unico</p>
                         </span>
 
@@ -86,7 +94,7 @@ const Pricing = () => {
                         <div className="top__title"><h2>Premium</h2></div>
 
                         <span className='price'>
-                            <h2 className='price__value'>*{price(countryCode)?.premium}</h2>
+                            <h2 className='price__value'>*{price?.premium}</h2>
                             <p className='price__mode'>/mensual</p>
                         </span>
 
