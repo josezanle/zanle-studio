@@ -17,7 +17,6 @@ const Body = () => {
       <Banner />
       <Welcome />
       <About />
-      <Pricing />
       <Enterprice />
       <Faqs />
       <Footer />
