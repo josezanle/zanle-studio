@@ -5,11 +5,9 @@ import Banner from "@/sections/banner";
 import Welcome from "@/sections/welcome";
 import About from "@/sections/about";
 import Pricing from "@/sections/pricing";
-import Enterprice from "@/sections/enterprice";
 import Faqs from "@/sections/faqs";
 import Footer from "@/sections/footer";
 import ScrollToTop from "@/components/scrollToTop";
-import Copyrights from "@/sections/copyrights";
 
 const Body = () => {
   return (
@@ -17,11 +15,10 @@ const Body = () => {
       <Banner />
       <Welcome />
       <About />
-      <Enterprice />
+      <Pricing />
       <Faqs />
       <Footer />
       <ScrollToTop />
-      <Copyrights />
     </div>
   )
 }

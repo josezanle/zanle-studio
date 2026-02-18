@@ -1,22 +1,14 @@
 import React from 'react';
-import { Icon } from '@/components/icons';
 
 const Welcome = () => {
 
   return (
     <div className='welcome__container'>
       <div className="left__content">
-        <div className='name_company__content'>
-          <Icon name="star" size={30} fill='#005de9' />
-          <Icon name="star" size={30} fill='#005de9' />
-          <Icon name="star" size={30} fill='#005de9' />
-
-          <b>Zanle Studio</b>
-        </div>
-
+        <h4>Zanle Studio</h4>
         <h1> Digital <br /> Web Design</h1>
 
-        <p>Somos una agencia de desarrollo de software, paginas web y aplicaciones android</p>
+        <p className="description__text__p">Somos una agencia de desarrollo de software, paginas web y aplicaciones android</p>
       </div>
 
       <div className="right__content">
@@ -40,25 +32,16 @@ const Welcome = () => {
               justify-content: center;
               flex-flow: column;
             }
-            .welcome__container .left__content .name_company__content {
-              width: 100%;
-              display: flex;
-              gap: 10px;
-              margin-bottom: 1em;
-            }
-            .welcome__container .left__content .name_company__content b{
-              font-size: 40px;
-            }
             .welcome__container .left__content h1{
               font-size: 100px;
               margin-bottom: 10px;
               color: #005de9;
             }
             
-            .welcome__container .left__content p{
+            .welcome__container .left__content .description__text__p{
               font-size: 45px;
-              font-weight: 200;
               width: 100%;
+              font-weight: 100;
             }
             
             .welcome__container .right__content{
@@ -93,17 +76,6 @@ const Welcome = () => {
               flex-flow: column;
             }
 
-            .welcome__container .left__content .name_company__content {
-              width: 100%;
-              display: flex;
-              gap: 10px;
-              margin-bottom: 1em;
-            }
-            
-            .welcome__container .left__content .name_company__content b{
-              font-size: 40px;
-            }
-
             .welcome__container .left__content h1{
               font-size: 100px;
               margin-bottom: 10px;
@@ -133,9 +105,6 @@ const Welcome = () => {
           @media (max-width: 500px) {
             .welcome__container .left__content p{width: 100%}
             .welcome__container .left__content h1{font-size: 60px; width: 100%}
-            .welcome__container .left__content .name_company__content {
-              flex-wrap: wrap;
-            }
           }
           
           `}

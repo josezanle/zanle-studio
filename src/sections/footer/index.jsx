@@ -6,170 +6,197 @@ const Footer = () => {
     <footer>
       <div className="footer__content" id="footer">
 
-        <h2 className="contact__us">Escribenos:</h2>
-        <p className="contact__email">studiozanle@gmail.com</p>
+        {/* CTA top */}
+        <div className="vc-top">
+          <div className="vc-email-block">
+            <p className="label">Escribenos</p>
+            <a
+              className="email"
+              href="mailto:zanle.studio.io@gmail.com?subject=Presupuesto para desarrollo web"
+            >
+              zanle.studio.io@gmail.com
+            </a>
+          </div>
+        </div>
 
-        <a 
-        className="start__project__button"
-        href="mailto:studiozanle@gmail.com?subject=Presupuesto para desarrollo web"
-        >Contactar</a>
+        <hr className="vc-divider" />
 
-        <hr className="footer__divisor" />
-
-        <div className="columns__container">
-          <div className="box__footer">
-            <h2 className="logo__name"><Logo size="50px" strokeOne="white" strokeTwo="white" /> Zanle Studio</h2>
-            <Br />
-            <Br />
-            <Br />
-            <p className="items">LATAM DEVELOPERS</p>
-
-            <h2 className="logo__name"><span className="logo__name">&#x2605;</span> 2024</h2>
+        {/* Bottom columns */}
+        <div className="vc-bottom">
+          <div className="vc-brand">
+            <h2 className="name">
+              <Logo size="40px" strokeOne="white" strokeTwo="white" /> Zanle Studio
+            </h2>
+            <p className="tagline">LATAM DEVELOPERS</p>
+            <p className="year">★ 2026 — Todos los derechos reservados</p>
           </div>
 
-          <Br />
-          <Br />
-
-          <div className="box__footer">
-            <h2 className="localization">Localización</h2>
+          <div>
+            <p className="col-title">Localización</p>
+            <p className="col-item">Argentina</p>
+            <p className="col-item">Perú</p>
             <Br />
-            <p className="items">Argentina</p>
-            <p className="items">Perú</p>
-            <Br />
-            <Br />
-
-            <h2 className="localization">Oficinas</h2>
-            <p className="items">100% Remoto</p>
-            <Br />
-            <Br />
-
+            <p className="col-title">Oficinas</p>
+            <p className="col-item">100% Remoto</p>
           </div>
 
-          <div className="box__footer">
-            <h2 className="social">Social</h2>
-            <Br />
-
-            <p className="items">Facebook</p>
-            <p className="items">Twitter</p>
-            <p className="items">Linkedin</p>
-            <p className="items">Instagram</p>
+          <div>
+            <p className="col-title">Social</p>
+            <p className="col-item">Facebook</p>
+            <p className="col-item">Twitter</p>
+            <p className="col-item">LinkedIn</p>
+            <p className="col-item">Instagram</p>
           </div>
 
+          <div>
+            <p className="col-title">Navegación</p>
+            <p className="col-item">Inicio</p>
+            <p className="col-item">Precios</p>
+            <p className="col-item">FAQs</p>
+            <p className="col-item">Contacto</p>
+          </div>
         </div>
 
         <style jsx>{`
-        .footer__content {
-          width: 100%;
-          min-height: 100vh;
-          display: flex;
-          flex-flow: column;
-          align-items: center;
-          justify-content: center;
-          color: white;
-          background-color: #ff445a;
-        }
-        .footer__content .contact__us {
-          font-size: 40px;
-          font-weight: 400;
-          margin-bottom: .5em;
-          display: contents;
-        }
-        .footer__content .contact__email {
-          font-size: 100px;
-          font-weight: bold;
-        }
-        .footer__content .start__project__button {
-          padding: 1em .5em;
-          margin-top: 2em;
-          font-size: 30px;
-          font-weight: bold;
-          border-radius: 2em;
-          width: 400px;
-          background: transparent;
-          color: #f0f0f0;
-          border: 1px solid #f0f0f0;
-          cursor: pointer;
-          text-align: center;
-        }
-        .footer__content .start__project__button:hover {
-          color: white;
-          border: 1px solid white;
-        }
 
-        .footer__content .footer__divisor {
-          width: 1200px;
-          height: 1px;
-          margin: 6em 0;
-          background: #f0f0f0
-        }
-
-        .footer__content .columns__container {
-          width: 1200px;
-          display: flex;
-          justify-content: space-between;
-        }
-
-        .footer__content .columns__container .box__footer {
-          width: 300px;
-          display: flex;
-          flex-direction: column;
-        }
-        .footer__content .columns__container .box__footer .logo__name {font-size: 45px}
-        .footer__content .columns__container .box__footer .localization ,
-        .footer__content .columns__container .box__footer .social {
-          font-size: 35px;
-        }
-
-        .footer__content .columns__container .box__footer .terms {
-          max-width: 350px;
-          margin-top: 20px;
-          font-weight: 500;
-          font-size: 25px;
-        }
-
-        .footer__content .columns__container .box__footer .items {
-          font-weight: 500;
-          font-size: 25px;
-        }
-
-        .footer__content .columns__container .box__footer a {
-          font-weight: 600;
-        }
-
-        @media (max-width: 1280px) {
-          .footer__content {padding: 3em 2em 0 2em}
-          .footer__content .contact__us {
-            font-size: 30px;
-            font-weight: 400;
-            margin-bottom: .5em;
-          }
-          .footer__content .contact__email {
-            font-size: 70px;
-          }
-          .footer__content .footer__divisor {width: 100%}
-
-          .footer__content .columns__container{
+          /* ── CONTAINER ── */
+          .footer__content {
             width: 100%;
-            flex-flow: column;
-            align-items: center;
+            background: #ff445a;
+            color: #fff;
+            padding: 80px 80px 48px;
+            position: relative;
+            overflow: hidden;
           }
-        }
 
-        @media (max-width: 810px) {
-          .footer__content .contact__email {font-size: 40px}
-        }
+          /* ── WATERMARK ── */
+          .footer__content::before {
+            content: 'ZANLE';
+            position: absolute;
+            bottom: -40px;
+            left: -20px;
+            font-size: 280px;
+            font-weight: 900;
+            color: rgba(255, 255, 255, .04);
+            letter-spacing: -10px;
+            pointer-events: none;
+            line-height: 1;
+            user-select: none;
+          }
 
-        @media (max-width: 590px) {
-          .footer__content .contact__email {font-size: 25px}
-          .footer__content .start__project__button {width: 100%}
-        }
+          /* ── TOP CTA ── */
+          .vc-top {
+            margin-bottom: 16px;
+          }
 
-        @media (max-width: 450px) {
-          .footer__content .columns__container .box__footer {width: 100%}
-          .footer__content .columns__container .box__footer .logo__name {font-size: 30px}
-        }
+          .label {
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, .55);
+            margin-bottom: 10px;
+          }
 
-      `}</style>
+          .email {
+            display: block;
+            font-size: 58px;
+            font-weight: 900;
+            letter-spacing: -2px;
+            line-height: 1;
+            color: #fff;
+            text-decoration: none;
+            transition: opacity .2s;
+          }
+          .email:hover { opacity: .8; }
+
+          /* ── DIVIDER ── */
+          .vc-divider {
+            height: 1px;
+            border: none;
+            background: rgba(255, 255, 255, .2);
+            margin: 48px 0 40px;
+          }
+
+          /* ── BOTTOM GRID ── */
+          .vc-bottom {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 32px;
+            align-items: start;
+          }
+
+          /* ── BRAND ── */
+          .vc-brand .name {
+            font-size: 28px;
+            font-weight: 900;
+            margin-bottom: 6px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+          }
+
+          .vc-brand .tagline {
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, .5);
+          }
+
+          .vc-brand .year {
+            font-size: 13px;
+            color: #ffffff;
+            margin-top: 28px;
+            font-weight: 600;
+          }
+
+          /* ── COLUMNS ── */
+          .col-title {
+            font-size: 14px;
+            font-weight: bold;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, .45);
+            margin-bottom: 14px;
+          }
+
+          .col-item {
+            font-size: 15px;
+            font-weight: 500;
+            color: rgba(255, 255, 255, .8);
+            margin-bottom: 7px;
+          }
+
+          /* ── RESPONSIVE ── */
+          @media (max-width: 1280px) {
+            .footer__content {
+              padding: 60px 40px 40px;
+            }
+            .email {
+              font-size: 42px;
+            }
+            .vc-bottom {
+              grid-template-columns: 1fr 1fr;
+              gap: 40px;
+            }
+          }
+
+          @media (max-width: 810px) {
+            .email { font-size: 30px; letter-spacing: -1px; }
+          }
+
+          @media (max-width: 590px) {
+            .footer__content { padding: 48px 24px 32px; }
+            .email { font-size: 22px; letter-spacing: 0; }
+            .vc-bottom { grid-template-columns: 1fr 1fr; gap: 28px; }
+            .footer__content::before { font-size: 160px; }
+          }
+
+          @media (max-width: 420px) {
+            .vc-bottom { grid-template-columns: 1fr; }
+          }
+        `}</style>
       </div>
     </footer>
   );

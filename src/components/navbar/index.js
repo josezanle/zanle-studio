@@ -24,7 +24,9 @@ const Navbar = ({ paths }) => {
 
   return (
     <div className={`navbar ${isSticky ? "sticky" : ""}`}>
-      <span className="logo__content"><Logo background="black" strokeOne="white" strokeTwo="white" size="50px" />Zanle Studio</span>
+      <span className="logo__content">
+        <Logo background="black" strokeOne="white" strokeTwo="white" size="50px" />
+        Zanle Studio</span>
       <Navigation paths={paths} isSticky={isSticky} />
       <CountryFlag/>
 
@@ -54,7 +56,10 @@ const Navbar = ({ paths }) => {
           display: flex;
           align-items: center;
           color: white;
-          font-size: 22px;
+          font-size: 20px;
+        }
+        .navbar.sticky .logo__content {
+          color: white;
         }
 
         @media (max-width: 950px) {.navbar{display: none}}
