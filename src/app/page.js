@@ -9,6 +9,8 @@ import Faqs from "@/sections/faqs";
 import Footer from "@/sections/footer";
 import ScrollToTop from "@/components/scrollToTop";
 
+// docker compose -f docker-compose-dev.yml up --build
+
 const Body = () => {
   return (
     <div className="body">
