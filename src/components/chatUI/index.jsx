@@ -36,8 +36,10 @@ export default function ChatUi() {
     setInput("");
     setLoading(true);
 
+    const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
+
     try {
-      const res = await fetch(`${import.meta.env.VITE_API_URL}/api/chat/`, {
+      const res = await fetch(`${API_URL}/api/chat/`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ session_key: sessionKey.current, message: text }),
