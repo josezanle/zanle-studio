@@ -5,8 +5,9 @@ import RotateWorld from '@/components/rotateWorld'
 import useLocation from '@/hooks/useLocation'
 
 const CountryFlag = () => {
-    const { countryCode } = useLocation()
-    const code = countryCode?.toLowerCase()
+    // const { countryCode } = useLocation()
+    // const code = countryCode?.toLowerCase()
+    const code = "ar"
 
     return (
         <div className='countryFlag'>
