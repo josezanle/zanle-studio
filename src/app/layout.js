@@ -17,8 +17,8 @@ export const metadata = {
     url: 'https://zanle.studio/',
     site_name: 'Zanle Studio',
     description: 'Somos una agencia de desarrollo de software, páginas web y aplicaciones Android',
-    see_also: 'https://wa.me/+51925822952',
-    phone_number: '+51925822952',
+    see_also: 'https://wa.me/+541125055852',
+    phone_number: '+541125055852',
   },
 };
 
@@ -34,7 +34,7 @@ export default function RootLayout({ children }) {
 
         {/* meta og */}
         <meta property="og:title" content="Zanle Studio" />
-        <meta property="og:description" content="Somos una consultora de desarrollo de software, páginas web y aplicaciones Android" />
+        <meta property="og:description" content="Somos una consultora de desarrollo de software, páginas web y aplicaciones." />
         <meta property="og:image" content="https://res.cloudinary.com/dubv6xkxf/image/upload/v1710119832/l1rf6z3z5zytvhdqnuen.png" />
         <meta property="og:url" content="https://zanle.studio/" />
         <meta property="og:site_name" content="Zanle Studio" />

@@ -58,8 +58,8 @@ const Banner = () => {
             background: white;
           }
           #header .left__content .left__image {
-            width: 750px;
-            height: 750px;
+            width: 500px;
+            height: 500px;
             border-radius: 50%;
             background-image: url("https://res.cloudinary.com/dubv6xkxf/image/upload/f_webp/v1710175296/zojrvuie7bcclzljxoij.jpg");
             background-size: cover;
@@ -95,15 +95,15 @@ const Banner = () => {
             width: 300px;
             height: 300px;
             right: -100px;
-            top: -300px;
+            top: -100px;
             position: absolute;
             content: "";
             border-radius: 100%;
             background: #ff445a;
           }
           #header .right__content .name:before {
-            width: 150px;
-            height: 150px;
+            width: 350px;
+            height: 350px;
             position: absolute;
             content: "";
             left: -200px;
