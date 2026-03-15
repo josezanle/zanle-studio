@@ -4,46 +4,63 @@ import '../styles/globals.css';
 const catamaran = Catamaran({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Zanle Studio',
-  description: 'Consultora de desarrollo de software',
-  robots: {
-    follow: true,
-    index: true
+  title: {
+    default: 'Zanle Studio',
+    template: '%s | Zanle Studio',
   },
-  og: {
-    title: 'Zanle Studio',
-    type: 'blog',
-    image: 'https://res.cloudinary.com/dubv6xkxf/image/upload/v1710119832/l1rf6z3z5zytvhdqnuen.png',
+  description: 'Zanle Studio — Agencia de desarrollo web y apps Android en LATAM. Sitios modernos, rápidos y a medida para empresas de Argentina, Perú y toda Latinoamérica.',
+  keywords: [
+    'agencia desarrollo web',
+    'desarrollo web argentina',
+    'desarrollo web peru',
+    'apps android latam',
+    'diseño web profesional',
+    'zanle studio',
+    'desarrollo software latam',
+  ],
+  authors: [{ name: 'Zanle Studio', url: 'https://www.zanle-studio.com/' }],
+  creator: 'Zanle Studio',
+  metadataBase: new URL('https://www.zanle-studio.com/'),
+  alternates: {
+    canonical: '/',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+  },
+  openGraph: {
+    title: 'Zanle Studio — Agencia de desarrollo web en LATAM',
+    description: 'Desarrollamos sitios web, apps Android y soluciones a medida para empresas de Argentina, Perú y toda Latinoamérica.',
     url: 'https://zanle.studio/',
-    site_name: 'Zanle Studio',
-    description: 'Somos una agencia de desarrollo de software, páginas web y aplicaciones Android',
-    see_also: 'https://wa.me/+541125055852',
-    phone_number: '+541125055852',
+    siteName: 'Zanle Studio',
+    type: 'website',
+    locale: 'es_AR',
+    images: [
+      {
+        url: 'https://res.cloudinary.com/dubv6xkxf/image/upload/v1710119832/l1rf6z3z5zytvhdqnuen.png',
+        width: 1200,
+        height: 630,
+        alt: 'Zanle Studio — Agencia de desarrollo web en LATAM',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Zanle Studio — Agencia de desarrollo web en LATAM',
+    description: 'Desarrollamos sitios web, apps Android y soluciones a medida para empresas de toda Latinoamérica.',
+    site: '@zanlestudio',
+    creator: '@zanlestudio',
+    images: ['https://res.cloudinary.com/dubv6xkxf/image/upload/v1710119832/l1rf6z3z5zytvhdqnuen.png'],
   },
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <head>
-        <meta name="robots" content="index, follow" />
-        <meta name="description" content="Consultora de desarrollo de software" />
-        <meta name="lang" content="es" />
-        <meta name="author" content="Zanle Studio" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-        {/* meta og */}
-        <meta property="og:title" content="Zanle Studio" />
-        <meta property="og:description" content="Somos una consultora de desarrollo de software, páginas web y aplicaciones." />
-        <meta property="og:image" content="https://res.cloudinary.com/dubv6xkxf/image/upload/v1710119832/l1rf6z3z5zytvhdqnuen.png" />
-        <meta property="og:url" content="https://zanle.studio/" />
-        <meta property="og:site_name" content="Zanle Studio" />
-
-        {/* meta twitter */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@zanlestudio" />
-        <meta name="twitter:creator" content="@zanlestudio" />
-      </head>
+    <html lang="es">
       <body className={catamaran.className}>{children}</body>
     </html>
   );
