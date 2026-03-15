@@ -19,9 +19,14 @@ const Navigation = ({ paths, isSticky }) => {
 
 
             <style jsx>{`
+                    nav{
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                    }
                     nav ul{
                         display: flex;
-                        justify-content: space-between;
+                        justify-self: center;
                         align-items: center;
                         gap: 25px;
                     }
@@ -29,11 +34,11 @@ const Navigation = ({ paths, isSticky }) => {
                 
                     nav ul li a {
                         position: relative;
-                        font-size: 30px;
+                        font-size: 25px;
                         color: ${isSticky ? "white" : "black"};
                         cursor: pointer;
-                        font-weight: bold;
                         text-decoration: none;
+                        font-variant: small-caps;
                     }
 
                     nav ul li a::after {
@@ -43,12 +48,12 @@ const Navigation = ({ paths, isSticky }) => {
                         bottom: 0;
                         height: 3px;
                         width: 0;
-                        background-color: ${isSticky ? "white" : "black"}; 
+                        background-color: ${isSticky ? "white" : "#005de9"}; 
                         transition: width 0.3s ease; 
                     }
 
                     nav ul li a:hover::after {width: 100%}
-                    nav ul li a:hover {color: ${isSticky ? "white" : "black"}}
+                    nav ul li a:hover {color: ${isSticky ? "white" : "#005de9"}}
                             
             `}</style>
 
