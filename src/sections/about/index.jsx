@@ -1,14 +1,11 @@
 const About = () => {
-  const whatsappUrl = "https://wa.me/+541125055852";
+  const whatsappUrl = "https://wa.me/541125055852";
 
   return (
     <div className="about__content" id="about">
 
       <div className="left">
         <h2>Así se ve<br />el éxito<br /><span className="accent">digital.</span></h2>
-      </div>
-
-      <div className="right">
         <p>Zanle Studio lo hace posible para tu negocio.</p>
         <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="btn">
           Empezar ahora
@@ -17,7 +14,7 @@ const About = () => {
 
       <style jsx>{`
         .about__content {
-          background-image: linear-gradient(to right, rgba(0,0,0,0.85) 45%, rgba(0,0,0,0.2) 100%),
+          background-image: linear-gradient(to right, rgba(0,0,0,0.85) 55%, rgba(0,0,0,0.2) 100%),
             url("https://res.cloudinary.com/dubv6xkxf/image/upload/f_webp/v1710177441/yowmwbmjdagtaxmyqbvl.jpg");
           background-size: cover;
           background-repeat: no-repeat;
@@ -25,14 +22,16 @@ const About = () => {
           width: 100%;
           min-height: 100vh;
           display: flex;
-          justify-content: center;
           align-items: center;
           padding: 4em 6em;
-          gap: 4em;
         }
 
         .left {
-          flex: 1;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 24px;
+          max-width: 620px;
         }
 
         .left h2 {
@@ -47,17 +46,8 @@ const About = () => {
           color: #ffcd1d;
         }
 
-        .right {
-          max-width: 320px;
-          display: flex;
-          flex-direction: column;
-          align-items: flex-end;
-          gap: 24px;
-          text-align: right;
-        }
-
-        .right p {
-          font-size: 22px;
+        .left p {
+          font-size: 20px;
           font-weight: 300;
           color: rgba(255, 255, 255, 0.85);
           line-height: 1.5;
@@ -87,16 +77,12 @@ const About = () => {
 
         @media (max-width: 800px) {
           .about__content {
-            flex-direction: column;
-            align-items: flex-start;
             padding: 4em 2em;
-            gap: 2em;
             background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
               url("https://res.cloudinary.com/dubv6xkxf/image/upload/f_webp/v1710177441/yowmwbmjdagtaxmyqbvl.jpg");
           }
           .left h2 { font-size: 56px; }
-          .right { max-width: 100%; text-align: left; align-items: flex-start; }
-          .right p { font-size: 18px; }
+          .left p { font-size: 17px; }
         }
 
         @media (max-width: 500px) {
