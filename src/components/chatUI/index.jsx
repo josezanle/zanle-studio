@@ -87,13 +87,6 @@ export default function ChatUi() {
                 En línea ahora
               </span>
             </div>
-            <button
-              className={classes["chat-close-btn"]}
-              onClick={() => setIsOpen(false)}
-              aria-label="Cerrar chat"
-            >
-              ✕
-            </button>
           </div>
 
           {/* Messages */}

@@ -7,7 +7,6 @@ import About from "@/sections/about";
 import Pricing from "@/sections/pricing";
 import Faqs from "@/sections/faqs";
 import Footer from "@/sections/footer";
-import ScrollToTop from "@/components/scrollToTop";
 import ChatUi from "@/components/chatUI";
 
 // docker compose -f docker-compose-dev.yml up --build
@@ -21,7 +20,6 @@ const Body = () => {
       <Pricing />
       <Faqs />
       <Footer />
-      <ScrollToTop />
       <ChatUi />
     </div>
   )
