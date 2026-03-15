@@ -95,15 +95,15 @@ const Banner = () => {
             width: 300px;
             height: 300px;
             right: -100px;
-            top: -100px;
+            top: -275px;
             position: absolute;
             content: "";
             border-radius: 100%;
             background: #ff445a;
           }
           #header .right__content .name:before {
-            width: 350px;
-            height: 350px;
+            width: 200px;
+            height: 200px;
             position: absolute;
             content: "";
             left: -200px;

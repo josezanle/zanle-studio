@@ -1,6 +1,3 @@
-/* ================================
-   CONTAINER — fixed bottom-right
-================================ */
 .chat-container {
   position: fixed;
   bottom: 24px;
@@ -12,9 +9,6 @@
   gap: 12px;
 }
 
-/* ================================
-   FLOAT BUTTON
-================================ */
 .chat-float-btn {
   width: 60px;
   height: 60px;
@@ -41,13 +35,10 @@
   fill: white;
 }
 
-/* ================================
-   PANEL
-================================ */
 .chat-panel {
-  width: 340px;
-  background: white;
+  width: 350px;
   border-radius: 20px;
+  background: white;
   overflow: hidden;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
   display: flex;
@@ -60,9 +51,6 @@
   to   { opacity: 1; transform: translateY(0); }
 }
 
-/* ================================
-   HEADER
-================================ */
 .chat-header {
   background: #0052FF;
   padding: 14px 16px;
@@ -86,9 +74,7 @@
   flex-shrink: 0;
 }
 
-.chat-header-info {
-  flex: 1;
-}
+.chat-header-info { flex: 1; }
 
 .chat-header-info h4 {
   color: white;
@@ -131,19 +117,14 @@
   flex-shrink: 0;
 }
 
-.chat-close-btn:hover {
-  background: rgba(255, 255, 255, 0.25);
-}
+.chat-close-btn:hover { background: rgba(255, 255, 255, 0.25); }
 
-/* ================================
-   MESSAGES
-================================ */
 .chat-messages {
   padding: 16px;
   display: flex;
   flex-direction: column;
   gap: 10px;
-  height: 300px;
+  height: 320px;
   overflow-y: auto;
   background: #fafafa;
   scroll-behavior: smooth;
@@ -181,6 +162,41 @@
   line-height: 1.55;
   max-width: 82%;
   align-self: flex-end;
+}
+
+/* ================================
+   SUGERENCIAS
+================================ */
+.suggestions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 4px;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.suggestion-btn {
+  background: white;
+  border: 1.5px solid #0052FF;
+  color: #0052FF;
+  border-radius: 20px;
+  padding: 7px 12px;
+  font-size: 12px;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+  line-height: 1.4;
+  white-space: nowrap;
+}
+
+.suggestion-btn:hover {
+  background: #0052FF;
+  color: white;
 }
 
 /* ================================
@@ -235,14 +251,8 @@
   background: white;
 }
 
-.chat-input:focus {
-  border-color: #0052FF;
-}
-
-.chat-input:disabled {
-  background: #fafafa;
-  color: #aaa;
-}
+.chat-input:focus { border-color: #0052FF; }
+.chat-input:disabled { background: #fafafa; color: #aaa; }
 
 .chat-send-btn {
   width: 38px;
@@ -263,20 +273,10 @@
   transform: scale(1.05);
 }
 
-.chat-send-btn:disabled {
-  background: #ccc;
-  cursor: not-allowed;
-}
+.chat-send-btn:disabled { background: #ccc; cursor: not-allowed; }
 
-.chat-send-btn svg {
-  width: 16px;
-  height: 16px;
-  fill: white;
-}
+.chat-send-btn svg { width: 16px; height: 16px; fill: white; }
 
-/* ================================
-   RESPONSIVE — mobile
-================================ */
 @media (max-width: 480px) {
   .chat-container {
     bottom: 16px;
@@ -290,7 +290,5 @@
     border-radius: 16px;
   }
 
-  .chat-messages {
-    height: 260px;
-  }
+  .chat-messages { height: 280px; }
 }

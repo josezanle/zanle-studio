@@ -3,6 +3,13 @@ import classes from "./chatUi.module.css";
 
 const SESSION_KEY = "zanle_chat_session";
 
+const SUGGESTIONS = [
+  "¿Cuánto cuesta?",
+  "Landing page",
+  "Apps Android",
+  "¿Se autoadministra?",
+  "Tiempos de entrega",
+];
 function getOrCreateSession() {
   let key = localStorage.getItem(SESSION_KEY);
   if (!key) {
@@ -19,6 +26,7 @@ export default function ChatUi() {
   ]);
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
+  const [showSuggestions, setShowSuggestions] = useState(true);
   const messagesEndRef = useRef(null);
   const sessionKey = useRef(getOrCreateSession());
 
@@ -28,10 +36,10 @@ export default function ChatUi() {
     }
   }, [messages, isOpen]);
 
-  const sendMessage = async () => {
-    const text = input.trim();
-    if (!text || loading) return;
+  const send = async (text) => {
+    if (!text.trim() || loading) return;
 
+    setShowSuggestions(false);
     setMessages((prev) => [...prev, { role: "user", content: text }]);
     setInput("");
     setLoading(true);
@@ -56,6 +64,8 @@ export default function ChatUi() {
     }
   };
 
+  const sendMessage = () => send(input.trim());
+
   const handleKeyDown = (e) => {
     if (e.key === "Enter" && !e.shiftKey) {
       e.preventDefault();
@@ -65,7 +75,6 @@ export default function ChatUi() {
 
   return (
     <div className={classes["chat-container"]}>
-      {/* Panel */}
       {isOpen && (
         <div className={classes["chat-panel"]}>
           {/* Header */}
@@ -91,17 +100,27 @@ export default function ChatUi() {
           <div className={classes["chat-messages"]}>
             {messages.map((msg, i) => (
               <div key={i} className={classes["msg-wrapper"]}>
-                <div
-                  className={
-                    msg.role === "assistant"
-                      ? classes["msg-bot"]
-                      : classes["msg-user"]
-                  }
-                >
+                <div className={msg.role === "assistant" ? classes["msg-bot"] : classes["msg-user"]}>
                   {msg.content}
                 </div>
               </div>
             ))}
+
+            {/* Sugerencias — solo al inicio */}
+            {showSuggestions && !loading && (
+              <div className={classes["suggestions"]}>
+                {SUGGESTIONS.map((s, i) => (
+                  <button
+                    key={i}
+                    className={classes["suggestion-btn"]}
+                    onClick={() => send(s)}
+                  >
+                    {s}
+                  </button>
+                ))}
+              </div>
+            )}
+
             {loading && (
               <div className={classes["msg-wrapper"]}>
                 <div className={classes["msg-bot"]}>
@@ -145,9 +164,9 @@ export default function ChatUi() {
         aria-label="Abrir chat"
       >
         {isOpen ? (
-          <svg viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" /></svg>
         ) : (
-          <svg viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z" /></svg>
         )}
       </button>
     </div>
