@@ -1,6 +1,7 @@
 import Logo from "@/components/logo";
 import Navbar from "@/components/navbar";
 import CountryFlag from "@/components/navbar/langSelector";
+import Reveal from "@/components/reveal";
 
 const paths = [
   { name: "Acerca", href: "about" },
@@ -23,7 +24,17 @@ const Banner = () => {
 
       <div className="right__content">
         <h1 className="title">
-          WE<br />BUILD<br /><span className="title--blue">DIGITAL.</span>
+          <Reveal animation="fade-right" delay={100}>
+            WE<br />
+          </Reveal>
+          <Reveal animation="fade-right" delay={100}>
+            BUILD<br />
+          </Reveal>
+          <Reveal animation="fade-right" delay={100}>
+            <span className="title--blue">DIGITAL.</span>
+          </Reveal>
+
+
         </h1>
         <p className="subtitle">
           Sitios web · Apps Android · Soluciones enterprise<br />

@@ -1,3 +1,4 @@
+import Reveal from '@/components/reveal';
 import React from 'react';
 
 const Welcome = () => {
@@ -16,7 +17,9 @@ const Welcome = () => {
     <div className='welcome__container'>
 
       <div className="left__content">
-        <div className="tag">LATAM DEVELOPERS</div>
+        <Reveal animation="fade-right" delay={100}>
+          <div className="tag">LATAM DEVELOPERS</div>
+        </Reveal>
 
         <h1>Código que<br /><span>convierte</span></h1>
 

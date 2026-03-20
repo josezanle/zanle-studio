@@ -1,5 +1,6 @@
 import { Br } from "@/components/br";
 import Logo from "@/components/logo";
+import Reveal from "@/components/reveal";
 
 const Footer = () => {
   return (
@@ -27,7 +28,9 @@ const Footer = () => {
             <h2 className="name">
               <Logo size="40px" strokeOne="white" strokeTwo="white" /> Zanle Studio
             </h2>
-            <p className="tagline">LATAM DEVELOPERS</p>
+            <Reveal animation="fade-right" delay={200}>
+              <p className="tagline">LATAM DEVELOPERS</p>
+            </Reveal>
             <p className="year">★ 2026 — Todos los derechos reservados</p>
           </div>
 
